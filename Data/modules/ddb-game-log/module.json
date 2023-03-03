@@ -1,0 +1,47 @@
+{
+  "id": "ddb-game-log",
+  "title": "D&D Beyond Gamelog",
+  "description": "D&amp;D Beyond Game log client",
+  "version": "2.0.0",
+  "download": "https://github.com/IamWarHead/ddb-game-log/releases/download/2.0.0/ddb-game-log.zip",
+  "manifest": "https://github.com/IamWarHead/ddb-game-log/releases/latest/download/module.json",
+  "readme": "https://github.com/IamWarHead/ddb-game-log/blob/master/README.md",
+  "changelog": "https://github.com/IamWarHead/ddb-game-log/blob/master/CHANGELOG.md",
+  "url": "https://github.com/IamWarHead/ddb-game-log",
+  "compatibility": {
+    "minimum": "10.282",
+    "verified": "10"
+  },
+  "authors": [
+    {
+      "name": "IamWarHead",
+      "email": "warhead@warhead.hu",
+      "url": "http://warhead.hu",
+      "discord": "https://discord.com/invite/HSTtrphyFg",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "verified": "2.0.1"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "dist/main.js"
+  ],
+  "styles": [
+    "dist/ddb-game-log.css"
+  ],
+  "socket": true,
+  "bugs": "https://github.com/IamWarHead/ddb-game-log/issues",
+  "flags": {
+    "allowBugReporter": true,
+    "noCopyEnvironmentSettings": true
+  }
+}

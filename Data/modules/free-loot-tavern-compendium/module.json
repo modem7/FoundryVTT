@@ -1,0 +1,64 @@
+{
+  "title": "Loot Tavern Free Item Compendium",
+  "description": "<p>A collection of ready-to-use beautifully illustrated Magic items from the Loot Tavern.</p><p>This compilation contains all 20+ themes from Loot Tavern, each containing <b>2 items</b> each.</p><div><p>Make browsing and sorting the themes easier with the <a href=\"https://foundryvtt.com/packages/compendium-folders\">Compendium Folders</a> and <a href=\"https://foundryvtt.com/packages/compendium-browser\">Compendium Browser</a> modules.</p></div>",
+  "version": "2.1.1",
+  "authors": [
+    {
+      "name": "Agginmad",
+      "url": "https://www.patreon.com/LootTavern",
+      "discord": "Aggi#5287",
+      "flags": {}
+    },
+    {
+      "name": "MrVauxs",
+      "discord": "MrVauxs#8622",
+      "flags": {}
+    }
+  ],
+  "manifest": "https://raw.githubusercontent.com/MrVauxs/Free-Loot-Tavern-Compendium/main/module.json",
+  "download": "https://github.com/MrVauxs/Free-Loot-Tavern-Compendium/archive/refs/heads/main.zip",
+  "url": "https://www.patreon.com/LootTavern",
+  "packs": [
+    {
+      "name": "magic-items",
+      "label": "Loot Tavern Magic Items",
+      "system": "dnd5e",
+      "path": "compendiums/magic-items.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "bestiary",
+      "label": "Loot Tavern Bestiary",
+      "system": "dnd5e",
+      "path": "compendiums/bestiary.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "variant-items",
+      "label": "Loot Tavern Variant Items",
+      "system": "dnd5e",
+      "path": "compendiums/variant-items.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "id": "free-loot-tavern-compendium",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "0.8.0",
+    "verified": "10"
+  }
+}

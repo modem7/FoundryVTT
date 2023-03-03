@@ -1,0 +1,123 @@
+<form>
+    <h2>Shop Generator</h2>
+    <div class="flexrow shop-gen">
+        <div class="flexcol">
+            <label for="shopType">Select a shop type</label>
+        </div>
+        <div class="flexcol">
+            <select id="shopType" name="Shop Type" data-action="shopType">
+                <option value=""></option> <!-- We provide a blank option to serve as the 'default' -->
+               {{# each validShopTypes }}
+                   {{#if (eq ../shopType @key) }}
+                       <option value="{{@key}}" selected>{{displayName}}</option>
+                   {{else}}
+                       <option value="{{@key}}">{{displayName}}</option>
+                   {{/if}}
+               {{/each}}
+            </select>
+        </div>
+    </div>
+    {{#if shopType}}
+        <br />
+        <div class="flexrow shop-gen">
+            <div class="flexcol">
+                <label for="shopPreset">Select a preset</label>
+            </div>
+            <div class="flexcol">
+                <select id="shopPreset" name="Shop Preset" data-action="shopPreset">
+                    <option value=""></option> <!-- We provide a blank option to serve as the 'default' -->
+                    {{# each validPresets }}
+                        {{#if (eq ../presetID @key) }}
+                            <option value="{{@key}}" selected>{{displayName}}</option>
+                        {{else}}
+                            <option value="{{@key}}">{{displayName}}</option>
+                        {{/if}}
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+    {{/if}}
+    <br/>
+
+    {{#if presetID }}
+        <div class="flexrow">
+            <div class="flexcol">
+                <label for="preset-name">Preset Name:</label>
+            </div>
+            <div class="flexcol">
+                <input type="text" id="preset-name" name="preset-name" value="{{ presetName }}">
+            </div>
+        </div>
+    {{/if}}
+
+    {{# each preset }} {{! He we are iterating through the individual fields of the preset. Really wish there was a more explicit way to say this in handlebars }}
+        <div class="flexrow">
+            <div class="flexcol">
+                {{#if (and (ne ../shopType "spell") ../presetID) }}
+                    <h3 class="centered">{{ lookup ../rarities @key }}</h3>
+                {{ else}}
+                    <h3 class="centered">{{ lookup ../spellLevels @key }}</h3>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="flexrow"> {{! Handle the radio buttons for chance vs range }}
+            <div class="flexcol">
+                {{#if (eq type "range") }}
+                    <input type="radio" id="{{ @key }}-type-range" name="{{ @key }}-type" value="range" checked="checked" data-action="{{ @key }}-type" data-action="type">
+                {{else}}
+                    <input type="radio" id="{{ @key }}-type-range" name="{{ @key }}-type" value="range" data-action="{{ @key }}-type" data-action="type">
+                {{/if}}
+                <label for="{{ preset }}-type-range" class="centered">Range</label>
+            </div>
+            <div class="flexcol">
+                {{#if (eq type "chance") }}
+                    <input type="radio" id="{{ @key }}-type-chance" name="{{ @key }}-type" value="chance" checked="checked" data-action="{{ @key }}-type" data-action="type">
+                {{else}}
+                    <input type="radio" id="{{ @key }}-type-chance" name="{{ @key }}-type" value="chance" data-action="{{ @key }}-type" data-action="type">
+                {{/if}}
+                <label for="{{ preset }}-type-range" class="centered">Chance</label>
+            </div>
+        </div>
+
+        {{#if (eq type "range") }} {{! Handle rendering the range options }}
+            <div class="flexrow">
+                <div class="flexcol centered">
+                    <label for="{{ @key }}-range-min">Min:</label>
+                    <input type="number" id="{{ @key }}-range-min" name="{{ @key }}-range-min" value="{{ min }}" min="0" data-action="min">
+                </div>
+                <div class="flexcol centered">
+                    <label for="{{ @key }}-range-max">Max:</label>
+                    <input type="number" id="{{ @key }}-range-max" name="{{ @key }}-range-max" value="{{ max }}" min="0" data-action="max">
+                </div>
+                <div class="flexcol centered"> {{! Here we handle if a specific rarity allows duplicates }}
+                    {{#if allow_duplicates }}
+                    <input type="checkbox" id="{{ @key }}-range-allow-duplicates" name="{{ @key }}-range-allow-duplicates" value="{{ @key }}-range-allow-duplicates" data-action="allow-duplicates" checked>
+                    {{ else }}
+                    <input type="checkbox" id="{{ @key }}-range-allow-duplicates" name="{{ @key }}-range-allow-duplicates" value="{{ @key }}-range-allow-duplicates" data-action="allow-duplicates">
+                    {{/if}}
+                    <label for="{{ @key }}-range-allow-duplicates">Allow duplicates?</label>
+                </div>
+            </div>
+        {{ else }}
+            <div class="flexrow">
+                <div class="flexcol centered">
+                    <label for="{{ @key }}-chance">Chance of 1 of this rarity item (0-1.00)</label>
+                    <input type="number" id="{{ @key }}-chance" name="{{ @key }}-chance" min="0" max="100" data-action="chance" value="{{ chance }}">
+                </div>
+            </div>
+        {{/if}}
+    <br />
+    {{/each}}
+
+    {{# if presetID}}
+        <div class="flexrow">
+            <div class="flexcol">
+                <button type="button" data-action="save" id="save">Save Preset</button>
+            </div>
+            <div class="flexcol">
+                <button type="button" data-action="generate" id="generate">Generate</button>
+            </div>
+        </div>
+    {{/if}}
+</form>

@@ -1,0 +1,120 @@
+div.app.backpack-manager {
+  min-width: 400px;
+  min-height: 400px;
+}
+
+div.app.backpack-manager > section.window-content {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+form.backpack-manager {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+form.backpack-manager header {
+  height: 28px;
+  font-weight: bold;
+  border: 1px solid var(--color-border-light-tertiary);
+  background: rgba(0, 0, 0, 0.1);
+  display: grid;
+  align-content: space-evenly;
+  font-size: 16px;
+  padding: 0 0.5em;
+  border-radius: 3px;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+}
+
+form.backpack-manager :is(.inventory, .stowed) {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+form.backpack-manager .stowed .stowed-content,
+form.backpack-manager .inventory .inventory-content {
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+form.backpack-manager section:last-of-type {
+  border-bottom: 1px solid var(--color-border-light-tertiary);
+}
+
+form.backpack-manager .stowed-content .item,
+form.backpack-manager .inventory-content .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25em;
+  border-radius: 4px;
+  font-size: 1.1em;
+  gap: 1em;
+}
+
+form.backpack-manager .stowed-content .item:nth-child(2n-1),
+form.backpack-manager .inventory-content .item:nth-child(2n-1) {
+  background: #11643b21;
+}
+
+form.backpack-manager .item .item-details {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+form.backpack-manager .item img {
+  border: none;
+  vertical-align: bottom;
+  height: 1.3em;
+}
+
+form.backpack-manager .item .functions {
+  display: flex;
+  white-space: nowrap;
+  gap: 1em;
+  min-width: fit-content;
+}
+
+form.backpack-manager .item .current {
+  max-width: 2em;
+  text-align: center;
+  height: 100%;
+  border-radius: 6px;
+}
+
+form.backpack-manager .button-section {
+  margin-top: 1em;
+}
+
+[name="flags.backpack-manager.containerActorUuid"]::placeholder {
+  font-style: italic;
+}
+
+.backpack-manager .currency-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.backpack-manager .currency-content > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.backpack-manager .currency-content .item.currency {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}

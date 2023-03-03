@@ -1,0 +1,99 @@
+{
+  "id": "encounter-stats",
+  "title": "Encounter Statistics",
+  "description": "Capture your Players attacks, damage, healing, dice rolls, custom events and more. Store the results into a Journal for individual encounters and the entire campaign.",
+  "version": "2.8.2",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.291",
+    "maximum": "10"
+  },
+  "authors": [
+    {
+      "name": "John Nolan",
+      "url": "https://github.com/johnnolan",
+      "discord": "JB#2780",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "minimum": "2.0.2",
+          "verified": "2.0.3"
+        }
+      },
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/4.4.0/system.json",
+        "compatibility": {
+          "minimum": "4.4.0",
+          "verified": "4.4.2"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "encounter-statistics",
+      "label": "Encounter Statistics Example Macros",
+      "path": "packs/encounter-statistics.db",
+      "type": "Macro",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "/dist/module.js"
+  ],
+  "styles": [
+    "/styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "fr",
+      "name": "Francais",
+      "path": "languages/fr.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "languages/es.json",
+      "flags": {}
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "languages/de.json",
+      "flags": {}
+    }
+  ],
+  "readme": "https://github.com/johnnolan/encounter-stats/blob/main/README.md",
+  "license": "https://github.com/johnnolan/encounter-stats/blob/main/LICENSE",
+  "bugs": "https://github.com/johnnolan/encounter-stats/issues/new/choose",
+  "changelog": "https://github.com/johnnolan/encounter-stats/releases",
+  "socket": true,
+  "url": "https://github.com/johnnolan/encounter-stats",
+  "manifest": "https://github.com/johnnolan/encounter-stats/releases/latest/download/module.json",
+  "download": "https://github.com/johnnolan/encounter-stats/releases/download/2.8.2/module.zip",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4",
+      "loop": false,
+      "flags": {}
+    }
+  ]
+}

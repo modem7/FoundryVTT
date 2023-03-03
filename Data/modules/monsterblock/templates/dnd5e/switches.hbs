@@ -1,0 +1,96 @@
+<nav class="switches">
+	<i class="fas fa-cog"></i>
+	<ul>
+		{{> "modules/monsterblock/templates/dnd5e/parts/trigger.hbs"
+			control="switchToDefault"
+			title="MOBLOKS5E.SwitchToDefault"
+		}}
+		{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="editing"}}
+		{{#if flags.editing}}
+			{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-delete"}}
+		{{/if}}
+		{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-resources"}}
+		{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-skill-save"}}
+		{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-not-prof"}}
+		<li>
+			<a>{{localize "MOBLOKS5E.DescriptionS"}}</a>
+			<ul>
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="attack-descriptions"}}
+				{{#if info.hasCastingFeature}}
+					{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="casting-feature"}}
+				{{/if}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="inline-secrets"}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="hidden-secrets"}}
+			</ul>
+		</li>
+		<li>
+			<a>{{localize "DND5E.HitPoints"}}</a>
+			<ul>
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="current-hit-points"}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="maximum-hit-points"}}
+			</ul>
+		</li>
+		{{#> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="hide-profile-image"}}
+			<ul>
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="hide-profile-image"}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="use-token-image"}}
+				{{#if info.vttatokenizer}}
+					{{> "modules/monsterblock/templates/dnd5e/parts/trigger.hbs"
+						control="openTokenizer"
+						title="MOBLOKS5E.OpenTokenizer"
+					}}
+				{{/if}}
+			</ul>
+		{{/"modules/monsterblock/templates/dnd5e/parts/switch.hbs"}}
+		{{#if info.hasLair}}
+			{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-lair-actions"}}
+		{{/if}}
+		{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-bio"}}
+		{{> "modules/monsterblock/templates/dnd5e/parts/trigger.hbs"
+			control="resetDefaults"
+			title="MOBLOKS5E.resetDefaults.label"
+		}}
+		<li>
+			<a>{{localize "MOBLOKS5E.mini-block.label"}}</a>
+			<ul>
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="show-collapsible"}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="compact-window"}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="compact-layout"}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/switch.hbs" control="compact-feats"}}
+				<li>
+					<label>
+						<a class="trigger nochild" data-control="setFontSize">
+							{{~localize "MOBLOKS5E.font-size.label"}}{{localize "MOBLOKS5E.Colon"~}}
+						</a>
+						<input type="text" class="switch-input" placeholder="{{localize "MOBLOKS5E.font-size.placeholder"}}" value="{{flags.font-size}}">
+					</label>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a>{{localize "MOBLOKS5E.Theme"}}</a>
+			<ul>
+			{{#each themes as |theme id|}}
+			{{#unless (eq id "custom")}}
+				{{> "modules/monsterblock/templates/dnd5e/parts/trigger.hbs"
+					control="pickTheme"
+					value=id
+					selected=(eq @root.flags.theme-choice id)
+					title=theme.name
+				}}
+			{{/unless}}
+			{{/each}}
+				<li>
+					<label class="custom-class-label{{#if (eq flags.theme-choice 'custom')}} selected{{/if}}">
+						<a	class="trigger nochild" 
+							data-control="pickTheme" 
+							data-value="custom">
+							{{~localize "MOBLOKS5E.CustomThemeName"}}{{localize "MOBLOKS5E.Colon"~}}
+						</a>
+						<input type="text" class="switch-input" placeholder="class-name" value="{{flags.custom-theme-class}}">
+					</label>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>

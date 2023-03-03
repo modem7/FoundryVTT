@@ -1,0 +1,32 @@
+{
+  "id": "shop-generator",
+  "title": "Nickle's Shop Generator",
+  "description": "A simple module to generate shops",
+  "authors": [
+    {
+      "name": "Nick Cleary",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "modules/main.js"
+  ],
+  "version": "1.0.4",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "styles/shop-gen.css"
+  ],
+  "download": "https://github.com/NickClearyTech/FoundryShopGenerator/releases/latest/download/module.zip",
+  "manifest": "https://github.com/NickClearyTech/FoundryShopGenerator/releases/latest/download/module.json"
+}

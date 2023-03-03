@@ -1,0 +1,36 @@
+.dnd5e.sheet .items-list .roles-header {
+  height: 35px;
+  margin: 0px 0;
+  padding: 0;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px groove #eeede0;
+  font-weight: bold;
+}
+
+.dnd5e.sheet .items-list .roles-header h3 {
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.dnd5e.sheet.actor .counters .crew-min-max input[type="number"] {
+  max-width: 25px;
+}
+
+.dnd5e.sheet.actor .counters .air input[type="number"] {
+  max-width: 40px;
+}
+
+.dnd5e.sheet.actor .counters .cargo-cap input[type="number"] {
+  max-width: 25px;
+}
+
+.dnd5e.sheet.actor .inventory-list .item-detail {
+  flex: 0 0 90px;
+}
+
+.dnd5e.sheet.item .weapon-properties label.checkbox {
+  flex: 0 0 135px;
+}

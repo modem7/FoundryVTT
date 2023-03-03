@@ -1,0 +1,82 @@
+<div class="tab active" data-tab="general">
+    <h2>{{localize "dnd5e-custom-skills.poptitle"}}</h2>
+
+    <form autocomplete="off" class="dnd5e-custom-skills" id="dnd5ecustomskillsform">
+        <div class="form-group">
+            <div class="label">{{localize "dnd5e-custom-skills.abilitiesNumLabel"}}
+                <input name="abilitiesNum" type="number" min="1" max="20" length="2" value="{{abilitiesNum}}" data-tooltip="{{localize 'dnd5e-custom-skills.abilitiesNumLabel' }}" />
+            </div>
+        </div>
+        <div class="custom-abilities-list">
+            {{#each customAbilitiesList as |abilitydata a|}}
+            <div class="form-group ability_element {{a}}">
+                <div class="ability_name">
+                    <div class="label">{{localize "dnd5e-custom-skills.abilityInput"}} ({{a}})</div>
+                    <input class="ability-label-capture" {{#if abilitydata.applied}}readonly{{/if}} type="text" data-key="{{a}}" name="fakeAbilityLabel.{{a}}.label" data-dtype="string" value="{{ abilitydata.label }}" />
+                    <input type="hidden" name="customAbilitiesList.{{a}}.label" value="{{ abilitydata.label }}" data-dtype="string" />
+                </div>
+                <div class="ability_apply" data-ability="{{a}}">
+                    <div class="label">{{localize "dnd5e-custom-skills.abilityApply"}}</div>
+                    <input type="checkbox" class="apply_ability" data-ability="{{a}}" name="customAbilitiesList.{{a}}.applied" data-dtype="Boolean" {{checked abilitydata.applied}}/>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="label">{{localize "dnd5e-custom-skills.skillNumLabel"}}
+                <input name="skillNum" type="number" min="1" max="50" value="{{skillNum}}" />
+            </div>
+        </div>
+        <div class="custom-skill-list">
+            {{#each customSkillList as |skilldata n|}}
+            <div class="form-group skill_element {{n}}">
+                <div class="skill_name">
+                    <div class="label">{{localize "dnd5e-custom-skills.skillInput"}} ({{n}})</div>
+                    <input class="skill-label-capture" {{#if skilldata.applied}}readonly{{/if}} type="text" data-key="{{n}}" name="fakeSkillList.{{n}}.label" data-dtype="string" value="{{ skilldata.label }}" />
+                    <input type="hidden" name="customSkillList.{{n}}.label" data-dtype="string" value="{{ skilldata.label }}" />
+                </div>
+                <div class="skill_ability">
+                    <div class="label">{{localize "dnd5e-custom-skills.skillAbility"}}</div>
+                    <select data-skill="{{n}}" class="ability_select" {{#if skilldata.applied}}disabled{{/if}} id="select_{{n}}" style="flex: 1;">
+                        {{#each ../abilities as |name key|}}
+                    <option {{#if (eq key skilldata.ability )}} selected {{/if}} value="{{key}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+                    <input type="hidden" name="customSkillList.{{n}}.ability" value="{{skilldata.ability}}" />
+                </div>
+                <div class="skill_apply" data-skill="{{n}}">
+                    <div class="label">{{localize "dnd5e-custom-skills.skillApply"}}</div>
+                    <input type="checkbox" class="apply_skill" data-skill="{{n}}" name="customSkillList.{{n}}.applied" data-dtype="Boolean" {{checked skilldata.applied}}/>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <hr>
+        <div class="form-group hide-abilities">
+            <h3><span class="fas fa-mask"></span> {{localize "dnd5e-custom-skills.hideAbilities"}}</h3>
+            {{#each abilities as |name key|}}
+            <label>
+              <input type="checkbox" {{#if (lookup  ../hiddenAbilities key) }} checked {{/if}} name="hiddenAbilities.{{key}}" value="{{key}}" data-dtype="Boolean"/>
+              {{name}}
+            </label> {{/each}}
+        </div>
+        <hr>
+        <div class="form-group hide-skills">
+            <h3><span class="fas fa-mask"></span> {{localize "dnd5e-custom-skills.hideSkills"}}</h3>
+            {{#each skills as |name key|}}
+            <label>
+              <input type="checkbox" {{#if (lookup ../hiddenSkills key) }} checked {{/if}} name="hiddenSkills.{{key}}" value="{{key}}" data-dtype="Boolean"/>
+              {{name.label}}
+            </label> {{/each}}
+        </div>
+        <!-- <div id="cs-debug_box"></div> -->
+        <hr>
+        <div class="form-group" style="margin: 10px;">
+            <button type="submit" name="submit" {{#if requireSave}} class="requireSave" {{/if}}><i class="fas fa-head-side-cough"></i> {{localize "dnd5e-custom-skills.save"}}</button>
+            <button type="button" name="reset"><i class="fas fa-shield-virus"></i> {{localize "dnd5e-custom-skills.reset"}}</button>
+        </div>
+
+
+    </form>
+</div>

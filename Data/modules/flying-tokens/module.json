@@ -1,0 +1,64 @@
+{
+  "id": "flying-tokens",
+  "title": "Flying Tokens",
+  "description": "Flying Tokens works with Token Magic FX API to add shadow and movement that simulates the flight.",
+  "version": "1.3.2",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  },
+  "authors": [
+    {
+      "name": "winterwulf",
+      "url": "https://github.com/paulo-roger/",
+      "discord": "winterwulf#3118",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "tokenmagic",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/flying-tokens.js"
+  ],
+  "scripts": [
+    "scripts/lib/lib.js"
+  ],
+  "styles": [
+    "styles/flying-tokens.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/LeafWulf/flying-tokens",
+  "manifest": "https://github.com/LeafWulf/flying-tokens/releases/latest/download/module.json",
+  "download": "https://github.com/LeafWulf/flying-tokens/releases/download/1.3.2/module.zip",
+  "license": "https://github.com/LeafWulf/flying-tokens/blob/master/LICENSE",
+  "readme": "https://github.com/LeafWulf/flying-tokens/blob/master/README.md",
+  "bugs": "https://github.com/LeafWulf/flying-tokens/issues",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://raw.githubusercontent.com/LeafWulf/flying-tokens/master/readme/icon.png",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/LeafWulf/flying-tokens/master/readme/cover.png",
+      "loop": false,
+      "flags": {}
+    }
+  ]
+}

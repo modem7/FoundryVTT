@@ -1,0 +1,156 @@
+{
+  "tokenActionHud": {
+    "accept": "適用",
+    "addToCombat": "戦闘に追加",
+    "blockListLabel": "ブロックリスト: 非表示 / 許可リスト: 表示",
+    "cancel": "キャンセル",
+    "collapseHud": "Collapse HUD",
+    "combat": "戦闘",
+    "editCategories": "Edit Categories",
+    "endTurn": "End Turn",
+    "expandHud": "Expand HUD",
+    "handlerNotFound": "操作が見つかりません、標準のローラーを使用します。",
+    "lockHud": "Lock HUD",
+    "makeInvisible": "非表示にようにする",
+    "pushLabelExplanation": "どちら側にカテゴリを表示しますか？",
+    "removeFromCombat": "戦闘から外す",
+    "title": "トークン･アクションHUD",
+    "token": "トークン",
+    "unlockHud": "Unlock HUD",
+    "utility": "他",
+    "settings": {
+      "activeCssAsText": {
+        "hint": "有効にすると、有効化できるボタンには、その能力値を示すアスタリスクも表示されます。非有効化されたボタンには、アスタリスクが付きません。",
+        "name": "有効化されたCSSをテキストでマーク"
+      },
+      "allow": {
+        "hint": "GM setting: Allow users with this role (and above) to use the HUD (Requires reload)",
+        "name": "Allow HUD",
+        "choices" : {
+          "4": "Game Master",
+          "3": "Assistant GM",
+          "2": "Trusted Player",
+          "1": "Player"
+        }
+      },
+      "alwaysShowHud": {
+        "hint": "ユーザーに割り当てられたキャラクターがあり、かつコマが選択されていない場合、HUDはこのキャラクターを標準として表示します。",
+        "name": "常にHUDを表示する"
+      },
+      "background": {
+        "hint": "Set the background color of the HUD. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "HUD Background Color"
+      },
+      "buttonBackgroundColor": {
+        "hint": "Set the background color of the HUD buttons. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Button Background Color"
+      },
+      "buttonBorderColor": {
+        "hint": "Set the border color of the HUD buttons. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Button Border Color"
+      },
+      "clickOpenCategory": {
+        "hint": "有効にすると、ホバーではなくクリックでカテゴリを開きます。",
+        "name": "クリックでカテゴリーを開く"
+      },
+      "debug": {
+        "hint": "デバッグ用のログを表示します(これは廃れてしまったので、あまり有用と期待しないでください)。",
+        "name": "デバッグ状態を有効化"
+      },
+      "direction": {
+        "hint": "HUD が展開する方向を設定する",
+        "name": "方向",
+        "choices": {
+          "down": "下",
+          "up": "上"
+        }
+      },
+      "displayCharacterName": {
+        "hint": "選択されたトークンのエイリアスをHUDの上部に表示します。",
+        "name": "HUDにタイトルを表示する"
+      },
+      "displayIcons": {
+        "hint": "有効にすると、アクションの画像がHUDのボタンに表示されます。",
+        "name": "アクションアイコンを表示"
+      },
+      "drag": {
+        "hint": "Move the HUD by dragging one of the category buttons",
+        "name": "Enable Dragging"
+      },
+      "enable": {
+        "hint": "現在のユーザに自動的にホットバーを使用できる状態で初期化します。プレイヤーは設定を変更することで自分の好みに変更することができます。",
+        "name": "現在のユーザはホットバーを使用できる"
+      },
+      "grid": {
+        "hint": "Use a grid layout for actions",
+        "name": "Grid"
+      },
+      "itemMacro": {
+        "hint": "アイテムマクロを含むマクロはオリジナルを上書きします。それ以外では両方が表示されます。",
+        "name": "アイテムマクロ：オリジナルを上書き",
+        "choices": {
+          "both": "オリジナル･アイテム、アイテムマクロ･アイテム両方表示",
+          "itemMacro": "アイテムマクロ･アイテムを表示",
+          "original": "オリジナルアイテムを表示"
+        }
+      },
+      "renderItemOnRightClick": {
+        "hint": "有効にした場合、HUD内の項目を右クリックすると、その項目のシートが表示されます（右クリックを使用する他の設定と競合する可能性があります）。",
+        "name": "右クリックでアイテムシートを表示する"
+      },
+      "reset": {
+        "hint": "WARNING!!! This will reset the hud to its default configuration",
+        "name": "Reset HUD"
+      },
+      "rollHandler": {
+        "hint": "このモジュールの恩恵を受けるシステムを選択します。",
+        "name": "使用システム"
+      },
+      "scale": {
+        "hint": "HUDのサイズをパーセントで調整します(デフォルトは100)",
+        "name": "HUDサイズ"
+      },
+      "style": {
+        "hint": "HUD のスタイルを設定する",
+        "name": "スタイル"
+      }
+    },
+    "tagDialog": {
+      "actionDialogDescription": "Add and remove actions. Drag actions to change their order.",
+      "actionDialogTitle": "Customise Actions",
+      "categoryDialogDescription": "Add and remove categories. Drag categories to change their order.",
+      "categoryDialogTitle": "Customise Categories",
+      "clearButton": "消去",
+      "options": {
+        "characterCount": {
+          "label": "Characters per Word",
+          "hint": "Limit the characters per word of the actions"
+        },
+        "customWidth": {
+          "label": "Custom Width",
+          "units": "(Pixels)",
+          "hint": "Custom width for the subcategories"
+        },
+        "grid": {
+          "label": "Grid",
+          "hint": "Grid layout for actions"
+        },
+        "image": {
+          "label": "Image",
+          "hint": "Image on this button"
+        },
+        "showCategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this button's title"
+        },
+        "showSubcategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this subcategory's title"
+        }
+      },
+      "subcategoryDialogDescription": "Add and remove subcategories. Select core subcategories from the list or enter free text for macros. Drag subcategories to change their order.",
+      "subcategoryDialogTitle": "Customise Subcategories",
+      "tagPlaceholder": "選択（セミコロンで区切る)"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "title": "Wrath and Glory Drag Ruler Integration",
+  "description": "A Drag Ruler speed provider for the Wrath and Glory game system.",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "Jeffry Hysong",
+      "email": "foundry@maelstrom.dev",
+      "url": "https://projects.maelstrom.dev/foundry",
+      "discord": "Malvok#1288",
+      "flags": {}
+    },
+    {
+      "name": "Manuel Vögele",
+      "email": "develop@manuel-voegele.de",
+      "discord": "Stäbchenfisch#5107",
+      "flags": {}
+    },
+    {
+      "name": "IronMonk",
+      "discord": "ironmonk88#4075",
+      "flags": {}
+    }
+  ],
+  "version": "2.0.12",
+  "url": "https://github.com/Maelstrom-Development/wng-dragruler",
+  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.12/module.json",
+  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.12/wng-dragruler-v2.0.12.zip",
+  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.12/LICENSE",
+  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.12/README.md",
+  "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
+  "scripts": [
+    "scripts/wng-dragruler.js"
+  ],
+  "id": "wng-dragruler",
+  "relationships": {
+    "requires": [
+      {
+        "id": "drag-ruler",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json",
+        "compatibility": {}
+      },
+      {
+        "id": "terrain-ruler",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-terrain-ruler/master/module.json",
+        "compatibility": {}
+      },
+      {
+        "id": "enhanced-terrain-layer",
+        "type": "module",
+        "manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "wrath-and-glory",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "9",
+    "verified": "9.269"
+  }
+}

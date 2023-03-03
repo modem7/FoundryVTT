@@ -1,0 +1,30 @@
+.shop-generator-icon-button {
+    padding: 0;
+    width: 50%;
+    font-size: small;
+    font-family: "Signika", sans-serif;
+    align-self: center;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    line-height: normal;
+}
+
+.shop-gen {
+    gap: 1em;
+    margin-top: 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}

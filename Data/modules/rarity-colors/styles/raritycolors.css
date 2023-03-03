@@ -1,0 +1,73 @@
+body :root {
+    --REuncommon: #008000;
+    --REuncommonExt : #006400;
+    --RErare: #0000ff;
+    --RErareExt: #191970;
+    --REveryrare : #800080;
+    --REveryrareExt: #4b0082;
+    --RElegendary: #ffa500;
+    --RElegendaryExt: #d2691e;
+    --REartifact: #d2691e;
+    --REartifactExt: #91450e;
+    --REspell: #add8e6;
+    --REspellExt: #0000ff;
+    --REfeat: #48d1cc;
+    --REfeatExt: #0e5c59;
+}
+.item.uncommon .item-name h4 {
+    color : var(--REuncommon) !important;
+    -webkit-text-stroke: 0.5px var(--REuncommonExt);
+} 
+
+.item.rare .item-name h4 {
+    color : var(--RErare) !important;
+    -webkit-text-stroke: 0.5px var(--RErareExt);
+} 
+
+.item.veryrare .item-name h4 {
+    color : var(--REveryrare) !important;
+    -webkit-text-stroke: 0.5px var(--REveryrareExt);
+} 
+
+.item.legendary .item-name h4 {
+    color : var(--RElegendary) !important;
+    -webkit-text-stroke: 0.5px var(--RElegendaryExt);
+} 
+
+.item.artifact .item-name h4{
+    color : var(--REartifact) !important;
+    -webkit-text-stroke: 0.5px var(--REartifactExt);
+}
+
+.directory-item.uncommon .document-name {
+    color : var(--REuncommon) !important;
+    -webkit-text-stroke: 0.5px var(--REuncommonExt);
+}
+
+.directory-item.rare .document-name {
+    color : var(--RErare) !important;
+    -webkit-text-stroke: 0.5px var(--RErareExt);
+}
+.directory-item.veryrare .document-name {
+    color : var(--REveryrare) !important;
+    -webkit-text-stroke: 0.5px var(--REveryrareExt);
+}
+.directory-item.legendary .document-name {
+    color : var(--RElegendary) !important;
+    -webkit-text-stroke: 0.5px var(--RElegendaryExt);
+} 
+
+.directory-item.artifact .document-name {
+    color : var(--REartifact) !important;
+    -webkit-text-stroke: 0.5px var(--REartifactExt);
+}
+
+.directory-item.spell .document-name {
+    color : var(--REspell) !important;
+    -webkit-text-stroke: 0.5px var(--REspellExt);
+}
+
+.directory-item.feat .document-name {
+    color : var(--REfeat) !important;
+    -webkit-text-stroke: 0.5px var(--REfeatExt);
+}

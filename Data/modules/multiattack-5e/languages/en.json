@@ -1,0 +1,52 @@
+{
+    "multiattack-5e": {
+        "settings": {
+            "condenseChatMessagesEnabled": {
+                "name": "Condense Multiple Attack/Damage Rolls"
+            },
+            "multiattackToolEnabled": {
+                "name":"Multiattack Tool",
+                "hint": "Enable tool in token control bar."
+            },
+            "playerToolEnabled": {
+                "name": "Multiattack Tool For Players" ,
+                "hint": "Requires \"Multiattack Tool\" setting enabled."
+            },
+            "extraAttackDSN": {
+                "name": "DsN! for Extra Attacks",
+                "hint": "Will not affect single attack/damage rolls."
+            },
+            "multiattackDSN": {
+                "name": "DsN! for Multiattacks"
+            },
+            "betterRollsDSN": {
+                "name": "DsN! for Better Rolls"
+            },
+            "disabled": "Disabled",
+            "attackOnly": "Attack rolls only",
+            "damageOnly": "Damage rolls only",
+            "enabled": "Enabled"
+        },
+        "dialog": {
+            "numberOfRolls": "Number of Rolls"
+        },
+        "ui": {
+            "selectOneToken": "Select one token.",
+            "setDefault": "Default set for",
+            "clearDefault": "Default cleared for"
+        },
+        "chat": {
+            "total": "Total"
+        },
+        "tool": {
+            "control": {
+                "title": "Multiattack"
+            },
+            "dialog": {
+                "title": "Multiattack Tool",
+                "setDefault": "Set Default",
+                "clearDefault": "Clear Default"
+            }
+        }
+    }
+}

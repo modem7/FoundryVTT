@@ -1,0 +1,45 @@
+{
+    "potion": {
+        "Perfume of Bewitching": {
+            "price": 75
+        },
+        "Potion of Healing": {
+            "price": 50
+        },
+        "Potion of Gaseous Form":{
+            "price": 1500
+        }
+    },
+    "spell": {
+        "0": {
+            "price": 15
+        },
+        "1": {
+            "price": 25
+        },
+        "2": {
+            "price": 150
+        },
+        "3": {
+            "price": 400
+        },
+        "4": {
+            "price": 800
+        },
+        "5": {
+            "price": 1500
+        },
+        "6": {
+            "price": 2000
+        },
+        "7": {
+            "price": 3500
+        },
+        "8": {
+            "price": 5000
+        },
+        "9": {
+            "price": 20000
+        }
+    }
+}

@@ -1,0 +1,41 @@
+ /* Tooltip container */
+
+.dtt2 {
+  position: fixed;
+  overflow:hidden;
+  z-index: 10000;
+  padding: 4px;
+  text-align: left;
+  pointer-events:none;
+  vertical-align: middle;
+}
+
+.dtt2 .dtt2-text {
+  background: #0000009f;
+  color: #ffffff9f;
+  padding: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  /* border-radius */
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.8) 0 0 2px;
+  -moz-box-shadow: rgba(0,0,0,0.8) 0 0 2px;
+  box-shadow: rgba(0,0,0,0.8) 0 0 2px;
+}
+
+.dtt2 .dtt2-arrow-left {
+  width: 0;
+  height: 0;
+  top:50%;
+  bottom:50%;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-right:14px solid #0000009f;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 10010;
+}

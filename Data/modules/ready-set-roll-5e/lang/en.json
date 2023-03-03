@@ -1,0 +1,155 @@
+{
+    "rsr5e": {
+        "settings": {
+            "enableAbilityQuickRoll.name": "Enable Quick Roll for Abilities",
+            "enableAbilityQuickRoll.hint": "When clicking on an ability check or saving throw, quick roll to chat instead of using the normal roll dialog. This functionality can be bypassed by holding Alt when clicking.",
+            "enableSkillQuickRoll.name": "Enable Quick Roll for Skills",
+            "enableSkillQuickRoll.hint": "When clicking on a skill check, automatically roll to chat instead of using the normal chat output. This functionality can be bypassed by holding Alt when clicking.",
+            "enableItemQuickRoll.name": "Enable Quick Roll for Items",
+            "enableItemQuickRoll.hint": "When clicking on an item's image (weapons, spells, features, etc.), automatically roll to chat instead of using the normal chat output. This functionality can be bypassed by holding Alt when clicking.",
+            "enableAltQuickRoll.name": "Enable Alternate Roll for Items",
+            "enableAltQuickRoll.hint": "When Alt-clicking on an item's image, output a different quick roll which can be configured separately, replacing the ability to bypass quick rolling for items. This setting has no effect if item quick rolling is disabled.",
+            "enableQuickRollDesc.name": "Enable Descriptions by Default",
+            "enableQuickRollDesc.hint": "When outputting a quick roll, always show the description by default. This can still be changed per item in quick roll configuration.",
+            "enableD20Icons.name": "Show D20 Rolls for Quick Rolls",
+            "enableD20Icons.hint": "When outputting a quick roll, display an icon showing the natural die roll next to the total result.",
+            "enableDiceSounds.name": "Enable Dice Sounds for Quick Rolls",
+            "enableDiceSounds.hint": "When outputting a quick roll, play the default system dice-rolling sound.",
+            "enableOverlayButtons.name": "Enable Overlay Buttons",
+            "enableOverlayButtons.hint": "When outputting a quick roll, enable overlay buttons on the chat message that offer additional functionality for the roll.",
+            "applyDamageTo.name": "Apply Damage Options",
+            "applyDamageTo.hint": "Determines which tokens damage is applied to when applying damage via the chat overlay buttons.",
+            "enableApplyEffects.name": "Enable Apply Effects Button",
+            "enableApplyEffects.hint": "When outputting a quick roll, show a button allowing the transfer of item effects to actors.",
+            "applyEffectsTo.name": "Apply Effects Options",
+            "applyEffectsTo.hint": "Determines which tokens effects are applied to when applying effects via the effects chat button.",
+            "alwaysApplyCrit.name": "Always Apply Critical Damage",
+            "alwaysApplyCrit.hint": "When using damage overlay buttons, always apply the rolled critical damage (if any). If turned off, using an overlay button for critical damage will display a prompt allowing the user to choose.",
+            "alwaysRollMulti.name": "Always Roll Multiple Dice",
+            "alwaysRollMulti.hint": "When outputting a quick roll, always roll two dice (or three for Elven Accuracy) even when advantage/disadvantage is not applied.",
+            "alwaysManualDamage.name": "Always Roll Damage Manually",
+            "alwaysManualDamage.hint": "When outputting a quick roll, do not quick roll damage. Instead, show a damage button to manually roll if there is damage available.",
+            "showSkillAbilities.name": "Show Ability Names for Skills",
+            "showSkillAbilities.hint": "When outputting a skill quick roll, display the name of the ability used next to the skill name.",
+            "rollModifierMode.name": "Roll Modifier Keys",
+            "rollModifierMode.hint": "Determines which keys to use to modify quick rolls with advantage or disadvantage. This has no effect if quick rolls are disabled.",
+            "defaultRollArt.name": "Quick Roll Image Used",
+            "defaultRollArt.hint": "Determines which art is used by default for ability checks and saving throws for an actor. If this is not available, the other icon will be used instead.",
+            "placementRollTitle.name": "Show Roll Title Labels",
+            "placementRollTitle.hint": "Determines if and where a non-damage roll's title, such as \"Attack\", appears.",
+            "placementDamageTitle.name": "Show Damage Title Labels",
+            "placementDamageTitle.hint": "Determines if and where a damage roll's title, such as \"Damage\", appears.",
+            "placementDamageContext.name": "Show Damage Context Labels",
+            "placementDamageContext.hint": "Determines if and where a damage roll's context label appears.",
+            "placementDamageType.name": "Show Damage Type Labels",
+            "placementDamageType.hint": "Determines where the damage type label is placed, relative to a damage roll.",
+            "contextReplacesTitle.name": "Context Replaces Title Label",
+            "contextReplacesTitle.hint": "If a context label is in the same place as a damage roll's title label, such as \"Damage\" or \"Healing\", it will replace it.",
+            "contextReplacesDamage.name": "Context Replaces Damage Type",
+            "contextReplacesDamage.hint": "If a context label is in the same place as a damage type label, it will replace it.",
+            "hideSaveDC.name": "Hide Save DCs",
+            "hideSaveDC.hint": "Determines when to hide the value of the DC for saving throw buttons in quick rolls."
+        },
+        "messages": {
+            "error": {
+                "libWrapperMinVersion": "This module requires libWrapper version {version} or newer.",
+                "labelNotInDictionary": "{type} '{label}' does not exist. Valid values can be found in {dictionary}.",
+                "objectNotExpectedType": "Data object did not match the expected type. Expected type '{type}'.",
+                "incorrectRollType": "Cannot roll an {function} roll for roll type '{type}'.",
+                "incorrectFieldType": "Cannot upgrade a roll of type '{type}' to a multi roll.",
+                "incorrectTargetState": "Cannot ugprade a roll to target state '{state}' because it is not a valid state (advantage or disadvantage).",
+                "rollIsNullOrUndefined": "The given roll is null or undefined.",
+                "itemNotSpecified": "No item identifier was specified. Please specify an item by name or ID.",
+                "cannotFindIdentifier": "No {type} exists with name or ID '{identifier}'. Please specify a valid {type}.",
+                "noSelectedActor": "You must have an actor selected to use this macro.",
+                "damageNotSpecified": "No damage formula was provided. Please specify one or more formulae to roll as damage."
+            },
+            "warning": {
+                "emptyDamageField": "One or more damage fields on this item are empty! To roll damage, ensure all damage fields are filled."
+            }
+        },
+        "choices": {
+            "rollModifierMode": {
+                "shiftAdv": "Shift ➔ Advantage, Ctrl/Cmd ➔ Disadvantage",
+                "ctrlAdv": "Ctrl/Cmd ➔ Advantage, Shift ➔ Disadvantage"
+            },
+            "placement": {
+                "0": "Don't Show",
+                "1": "Above",
+                "2": "Below & Inside",
+                "3": "Below & Outside"
+            },
+            "apply": {
+                "0": "Apply to Selected Tokens",
+                "1": "Apply to Targeted Tokens",
+                "2": "Apply to Both"
+            },
+            "hideSaveDC": {
+                "0": "Never",
+                "1": "NPCs Only",
+                "2": "Always"
+            }
+        },
+        "sheet": {
+            "tab": {
+                "title": "Quick Roll",
+                "section": {
+                    "defaultRoll": "Default Roll Options",
+                    "alternateRoll": "Alternate Roll Options"
+                },
+                "subsection": {
+                    "main": "Main Content",
+                    "damage": "Damage Rolls",
+                    "effects": "Active Effects",
+                    "consume": "Consumables"
+                },
+                "options": {
+                    "description": "Description",
+                    "flavor": "Flavor",
+                    "footer": "Properties",
+                    "attack": "Attack",
+                    "template": "Place Template",
+                    "save": "Save DC",
+                    "other": "Other",
+                    "check": "Check",
+                    "quantity": "Quantity",
+                    "uses": "Uses",
+                    "resource": "Resource",
+                    "recharge": "Recharge"
+                }
+            },
+            "placeholder": {
+                "context": "Context",
+                "label": "Label"
+            }
+        },
+        "chat": {
+            "hide": "??",
+            "attack": "Attack",
+            "check": "Check",
+            "save": "Save",
+            "saveDC": "Save vs DC",
+            "damage": "Damage",
+            "healing": "Healing",
+            "crit": "Crit",
+            "other": "Other",
+            "effects": "Apply Active Effects",
+            "buttons": {
+                "damageFull": "Click to apply full damage to selected token(s).",
+                "damageHalf": "Click to apply half damage to selected token(s).",
+                "damageQuarter": "Click to apply quarter damage to selected token(s).",
+                "damageDouble": "Click to apply double damage to selected token(s).",
+                "healing": "Click to apply healing to selected token(s).",
+                "healingTemp": "Click to apply temporary hitpoints to selected token(s).",
+                "rollCrit": "Click to roll critical damage.",
+                "rollAdvantage": "Click to roll with advantage.",
+                "rollDisadvantage": "Click to roll with disadvantage."
+            },
+            "critPrompt": {                
+                "title": "Apply Crit Damage?",
+		        "yes": "Yes",
+		        "no": "No"
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+  "tokenActionHud": {
+    "dnd5e": {
+      "1stLevelSpells": "1st Level Spells",
+      "2ndLevelSpells": "2nd Level Spells",
+      "3rdLevelSpells": "3rd Level Spells",
+      "4thLevelSpells": "4th Level Spells",
+      "5thLevelSpells": "5th Level Spells",
+      "6thLevelSpells": "6th Level Spells",
+      "7thLevelSpells": "7th Level Spells",
+      "8thLevelSpells": "8th Level Spells",
+      "9thLevelSpells": "9th Level Spells",
+      "abilities": "Zdolności",
+      "activeFeatures": "Active Features",
+      "artificerInfusions": "Artificer Infusions",
+      "atWillSpells": "At-Will Spells",
+      "backgroundFeatures": "Background Features",
+      "bonusActions": "Akcje bonusowe",
+      "cantrips": "Cantrips",
+      "channelDivinity": "Channel Divinity",
+      "checks": "Sprawdzenie",
+      "classFeatures": "Class Features",
+      "conditions": "Stany",
+      "crewActions": "Akcje załogi",
+      "defensiveTactics": "Defensive Tactics",
+      "eldritchInvocations": "Eldritch Invocations",
+      "elementalDisciplines": "Elemental Disciplines",
+      "feats": "Feats",
+      "fightingStyles": "Fighting Styles",
+      "huntersPrey": "Hunter's Prey",
+      "innateSpells": "Innate Spells",
+      "kiAbilities": "Ki Abilities",
+      "lair": "Matecznik",
+      "lairActions": "Matecznik akcje",
+      "legendary": "Legendarny",
+      "legendaryActions": "Legendarny akcje",
+      "magicItems": "Magiczne Przedmioty",
+      "maneuvers": "Maneuvers",
+      "metamagicOptions": "Metamagic Options",
+      "monsterFeatures": "Monster Features",
+      "multiattacks": "Multiattacks",
+      "otherActions": "Inne akcje",
+      "pactBoons": "Pact Boons",
+      "pactSpells": "Pact Spells",
+      "passiveFeatures": "Passive Features",
+      "psionicPowers": "Psionic Powers",
+      "raceFeatures": "Race Features",
+      "rests": "Odpoczynki",
+      "rollInitiative": "Rzut na Inicjatywę",
+      "runes": "Runes",
+      "skills": "Umiejętności",
+      "superiorHuntersDefense": "Superior Hunter's Defense",
+      "settings": {
+        "abbreviateSkills": {
+          "hint": "Display skill and ability names as a three-character abbreviation",
+          "name": "Abbreviate Skill and Ability Names"
+        },
+        "displaySpellInfo": {
+          "hint": "Display spell component information, concentration, and ritual status next to the spell's name",
+          "name": "Display Spell Information"
+        },
+        "showItemsWithoutActivationCosts": {
+          "hint": "Show items without an activation cost",
+          "name": "Show Items without Activation Costs"
+        },
+        "showSlowActions": {
+          "hint": "Pokaż działania, które trwają dłużej niż jedną rundę",
+          "name": "Pokaż powolne działania"
+        },
+        "showUnchargedItems": {
+          "hint": "Show items with no charges remaining",
+          "name": "Show Uncharged Items"
+        },
+        "showUnequippedItems": {
+          "hint": "Show unequipped items",
+          "name": "Show Unequipped Items"
+        },
+        "showUnpreparedSpells": {
+          "hint": "Show unprepared spells",
+          "name": "Show Unprepared Spells"
+        }
+      }
+    }
+  }
+}

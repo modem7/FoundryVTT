@@ -1,0 +1,139 @@
+{
+  "title": "Super Casual Dungeon Crawling",
+  "id": "super-casual-dungeon-crawling",
+  "system": "dnd5e",
+  "coreVersion": "10.291",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "systemVersion": "2.1.5",
+  "packs": [
+    {
+      "type": "Item",
+      "label": "DDB Backgrounds",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-backgrounds",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-backgrounds.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Classes",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-classes",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-classes.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Subclasses",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-subclasses",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-subclasses.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Class Features",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-class-features",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-class-features.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Feats",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-feats",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-feats.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Items",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-items",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-items.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Actor",
+      "label": "DDB Monsters",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-monsters",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-monsters.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Actor",
+      "label": "DDB Vehicles",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-vehicles",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-vehicles.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Races",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-races",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-races.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Racial Traits",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-racial-traits",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-racial-traits.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Spells",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-spells",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-spells.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "RollTable",
+      "label": "DDB Tables",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-tables",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-tables.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Item",
+      "label": "DDB Override",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-override",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-override.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "type": "Adventure",
+      "label": "DDB Adventures",
+      "name": "ddb-super-casual-dungeon-crawling-ddb-adventures",
+      "path": "packs/ddb-super-casual-dungeon-crawling-ddb-adventures.db",
+      "system": "dnd5e",
+      "private": false,
+      "flags": {}
+    }
+  ]
+}

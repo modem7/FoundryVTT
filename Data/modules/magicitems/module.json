@@ -1,0 +1,111 @@
+{
+  "id": "magicitems",
+  "title": "Magic Items",
+  "description": "Module that adds the ability to create magical items with spells or feats that belong to the item itself, such as staffs or magic wands, which will be automatically inherited from the character who owns the item.",
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "verified": "2.0.2"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Simone",
+      "url": "https://gitlab.com/riccisi/foundryvtt-magic-items",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "magicitems.js"
+  ],
+  "styles": [
+    "magicitems.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "path": "lang/it.json",
+      "flags": {}
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json",
+      "flags": {}
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json",
+      "flags": {}
+    },
+    {
+      "lang": "fr",
+      "name": "Francais",
+      "path": "lang/fr.json",
+      "flags": {}
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json",
+      "flags": {}
+    },
+    {
+      "lang": "cs",
+      "name": "Česky",
+      "path": "lang/cs.json",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "magicitems",
+      "label": "Magic Items",
+      "system": "dnd5e",
+      "path": "packs/magic-items.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magicitem-feats",
+      "label": "Magic Items: Item Feats",
+      "system": "dnd5e",
+      "path": "packs/magic-items-item-feats.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "magicitem-tables",
+      "label": "Magic Items: Item Tables",
+      "system": "dnd5e",
+      "path": "packs/magic-items-item-tables.db",
+      "type": "RollTable",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "url": "https://gitlab.com/riccisi/foundryvtt-magic-items",
+  "manifest": "https://gitlab.com/riccisi/foundryvtt-magic-items/raw/master/module/module.json",
+  "download": "https://gitlab.com/riccisi/foundryvtt-magic-items/-/jobs/artifacts/3.0.0/raw/magic-items.zip?job=build"
+}

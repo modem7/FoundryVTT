@@ -1,0 +1,62 @@
+{
+  "title": "Enhanced Terrain Layer",
+  "description": "A base module that adds a Terrain Layer to Foundry.  Used as a library for Rulers and other modules",
+  "version": "10.6",
+  "authors": [
+    {
+      "name": "IronMonk",
+      "discord": "ironmonk88#4075",
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Spanish",
+      "path": "lang/es.json",
+      "flags": {}
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json",
+      "flags": {}
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json",
+      "flags": {}
+    },
+    {
+      "lang": "zh-tw",
+      "name": "正體中文",
+      "path": "lang/zh-tw.json",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "terrain-main.js",
+    "js/controls.js",
+    "js/settings.js"
+  ],
+  "styles": [
+    "css/terrainlayer.css"
+  ],
+  "url": "https://github.com/ironmonk88/enhanced-terrain-layer",
+  "download": "https://github.com/ironmonk88/enhanced-terrain-layer/archive/10.6.zip",
+  "manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json",
+  "bugs": "https://github.com/ironmonk88/enhanced-terrain-layer/issues",
+  "id": "enhanced-terrain-layer",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
+}

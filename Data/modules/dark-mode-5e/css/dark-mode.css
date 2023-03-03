@@ -1,0 +1,417 @@
+.app.window-app.dnd5e.sheet.minimized {
+    background-color: rgba(102,102,102,0.1);
+}
+.dnd5e.sheet.actor .skill.proficient input[value="1"] ~ span.skill-mod,
+.ability-modifiers input[value="1"] ~ span.ability-save {
+    color: #740000;
+    text-shadow: 0 0 5px red;
+}
+.dnd5e.sheet.actor .skill.proficient input[value="0.5"] ~ span.skill-mod{
+    color: #740000;
+}
+.dnd5e.sheet.actor .skill.proficient input[value="2"] ~ span.skill-mod{
+    color: white;
+    text-shadow: 0 0 5px red;
+    font-weight: bold;
+}
+body.dark{
+    caret-color: #ededed;
+}
+body.dark button{
+    background: #000000;
+}
+body.dark .dnd5e.sheet .window-content, 
+body.dark .window-app .window-content, 
+body.dark .cfg__btn-tab-header, 
+body.dark .ve-window{
+    background: url("../img/Grey_Texture.png") repeat !important;
+    color: #ededed;
+}
+body.dark .chat-message{
+    background: url("../img/Grey_Texture.png") repeat;
+    color: #ededed;
+}
+body.dark .chat-message.whisper{
+    background: #2f1f30;
+}
+body.dark .chat-message.blind {
+    background: #361616;
+}
+body.dark textarea{
+    background: #000000;
+    border-color: #666666;
+}
+body.dark .dnd5e .form-header{
+    color: #999999;
+}
+body.dark .dnd5e.sheet.item h4.damage-header{
+    color: #ededed;
+}
+body.dark .dnd5e input[type="text"], 
+body.dark .dnd5e input[type="number"], 
+body.dark .dnd5e select,
+body.dark .dnd5e.sheet.actor .spell-school, 
+body.dark .dnd5e.sheet.actor .spell-action, 
+body.dark .dnd5e.sheet.actor .spell-target{
+    color: #e9e9e9;
+}
+body.dark .dnd5e button,
+body.dark .dnd5e .items-list,
+body.dark .dnd5e .items-list .item .item-name,
+body.dark .dnd5e.chat-card .card-header h3,
+body.dark .chat-message .message-header,
+body.dark .dnd5e.sheet.actor .spell-slots, 
+body.dark .dnd5e.sheet.actor .spell-comps,
+body.dark .dnd5e .form-group label,
+body.dark .dnd5e.sheet.actor h4.box-title,
+body.dark .dnd5e.sheet.actor .counters .counter h4,
+body.dark .dnd5e.sheet .sheet-header .summary li,
+body.dark .dnd5e.sheet .editable h4.rollable:hover, 
+body.dark .dnd5e.sheet .editable .rollable:hover > h4,
+body.dark .dnd5e.sheet.actor.character .characteristics textarea,
+body.dark .dnd5e.sheet.actor .encumbrance .encumbrance-label,
+body.dark .form-group select,
+body.dark button.grid-config,
+body.dark button.perfect-vision--button,
+body.dark .sheet footer.sheet-footer > button,
+body.dark button.file-picker,
+body.dark .app.window-app.sheet.scene-sheet button,
+body.dark .dialog .dialog-buttons button.default,
+body.dark button.image-hover-picker-button,
+body.dark select.form-control,
+body.dark form .form-group .form-fields > *,
+body.dark input.awesomplete.keyinput,
+body.dark .dnd5e.sheet.actor .inventory-list .item-summary{
+    color: #ededed;
+}
+body.dark .dnd5e.sheet.actor .skill.proficient input[value="1"] ~ span.skill-mod,
+body.dark .ability-modifiers input[value="1"] ~ span.ability-save {
+    color: #f2ffa8;
+    text-shadow: none;
+}
+body.dark input[type="range"] {
+    background: 0;
+}
+body.dark .dnd5e.sheet.actor .skill.proficient input[value="0.5"] ~ span.skill-mod{
+    text-shadow: 0 0 5px red;
+}
+body.dark .dnd5e.sheet.actor .skill.proficient input[value="2"] ~ span.skill-mod{
+    color: #f2ffa8;
+    font-weight: bold;
+}
+body.dark #vtta-tokenizer div.section {
+    background: rgba(255,255,255,0.1);
+}
+body.dark #vtta-tokenizer div.menu{
+    background: 0;
+}
+body.dark #vtta-tokenizer div.view-layer-control {
+    background: 0;
+}
+#vtta-tokenizer div.view-layer-control button.active {
+    color: #000000 !important;
+}
+body.dark form.crash-category-app .form-group label{
+    color: #ededed;
+}
+body.dark .ui-list__wrp-preview{
+    background: #000000;
+}
+body.dark button, 
+body.dark select, 
+body.dark textarea, 
+body.dark input,
+body.dark form.crash-tracked-item-app .form-group label,
+body.dark form.crash-tracked-item-app .form-header{
+    color: #ededed !important;
+}
+body.dark input::placeholder {
+    color: #939393;
+}
+body.dark .dnd5e.sheet.actor .traits i.fas:hover {
+    color: #ededed;
+}
+body.dark .dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
+    color: #f2ffa8;
+    text-shadow: none;
+}
+body.dark input, 
+body.dark select {
+    background: rgba(0, 0, 0, 0.8);
+}
+body.dark button{
+    border: 0px;
+    box-shadow: 0 0 3px #ededed;
+}
+body.dark button:hover {
+    box-shadow: 0 0 3px #f00f00;
+}
+body.dark .dnd5e.sheet.actor .proficient .proficiency-toggle,
+body.dark .dnd5e.sheet.actor.character .resource .attribute-value label.recharge{
+    color: #adadad;
+}
+body.dark .dnd5e.sheet.actor .inventory-filters .currency label{
+    color: #c9c9c9;
+}
+body.dark option, 
+body.dark optgroup,
+body.dark input.lst__search,
+body.dark .btn-group>input.form-control, 
+body.dark .input-group>input.form-control{
+    background: #000000;
+}
+body.dark .dnd5e.sheet.actor .spell-component.tag{
+    color: #000000;
+    background: #ededed;
+}
+body.dark .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.active, 
+body.dark .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.active{
+    color: #c7b94d;
+}
+body.dark .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle, 
+body.dark .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle,
+.dnd5e.sheet.actor .inventory-list .item .item-name i.not-attuned{
+    color: #9d9d9d;
+}
+body.dark .directory .directory-header .header-search input{
+    background: rgba(0,0,0,0.4);
+}
+body.dark .dnd5e input[type="text"]:hover, 
+body.dark .dnd5e input[type="number"]:hover, 
+body.dark .dnd5e input[type="checkbox"]:hover, 
+body.dark .dnd5e input[type="text"]:focus, 
+body.dark .dnd5e input[type="number"]:focus, 
+body.dark .dnd5e input[type="checkbox"]:focus{
+    border: 1px solid #ededed;
+}
+body.dark .dnd5e.sheet .crash-training .activity-type, 
+body.dark .tidy5e.sheet .crash-training .activity-type,
+body.dark .dnd5e.sheet .crash-training .activity-override, 
+body.dark .tidy5e.sheet .crash-training .activity-override,
+body.dark .dnd5e.sheet .crash-training .items-list, 
+body.dark .tidy5e.sheet .crash-training .items-list,
+body.dark .dnd5e.sheet .crash-training .crash-training-controls div, 
+body.dark .tidy5e.sheet .crash-training .crash-training-controls div{
+    color: #adadad;
+}
+body.dark .dnd5e.sheet .sheet-navigation .item.active,
+body.dark .dnd5e.sheet .filter-list .filter-item.active{
+    border-bottom: 3px solid #ff1b1b;
+}
+body.dark .dnd5e.sheet .sheet-navigation .item{
+    border-bottom: 2px solid #b5b3a4;
+}
+body .dnd5e.sheet .sheet-navigation .item{
+    border-radius: 4px;
+}
+body.dark .dnd5e.sheet .filter-list .filter-item:hover{
+    border-bottom: 3px solid #ededed;
+}
+body.dark .inventory-list .category-weight .fa-feather {
+    color: #00ff00;
+    text-shadow: 0 0 8px lime;
+}
+body.dark .inventory-list .category-weight,
+body.dark .inventory-list .inv-plus-stuff{
+    opacity: 0.75 !important;
+}
+body.dark .dnd5e.sheet.actor .inventory-list .item .item-name i.attuned{
+    color: #c7b94d;
+}
+body.dark .prosemirror menu .pm-dropdown{
+    background: rgba(0,0,0,0.5);
+}
+body.dark .prosemirror menu button:hover, 
+body.dark .prosemirror menu button.active{
+    background: rgba(0,0,0,1);
+    color: #ededed;
+    box-shadow: 0 0 2px #ededed;
+}
+body.dark .prosemirror menu .pm-dropdown ul{
+    background: rgba(0,0,0,1);
+}
+body.dark .prosemirror menu .pm-dropdown li:hover{
+    background: #222222;
+}
+body.dark .dnd5e.sheet.item .sheet-body .item-properties .properties-header{
+    color: #adadad;
+}
+body.dark .dnd5e.sheet.actor .encumbrance{
+    background: #000000;
+    border: 1px solid #e1e1e1;
+}
+body.dark .dnd5e.sheet.actor .encumbrance .encumbrance-bar{
+    background: #ff1b1b;
+    border: 1px solid #ff6d6d;
+}
+body.dark a.content-link, 
+body.dark a.inline-roll{
+    background: #303030;
+}
+body.dark .jlnk__entity-link{
+    background: #303030;
+}
+body.dark body.change-windows:not(.system-forbidden-lands) .window-app:not(.image-popout){
+    background-color: #000000;
+}
+body.dark .window-app{
+    box-shadow: 0 0 10px #ededed;
+}
+body.dark .editor-edit{
+    background: rgb(0 0 0 / 75%);
+    border: 1px solid #ededed;
+}
+body.dark .app.window-app .window-content button.btn {
+    background: rgba(0,0,0,0.5);
+    color: #ededed;
+}
+body.dark .app.window-app .window-content button.btn.btn--active {
+    background: rgba(255,255,255,1);
+    color: #000000 !important;
+}
+body.dark input.form-control, 
+body.dark textarea.form-control{
+    background: #2e2e2e;
+}
+body.dark select.ve-foundry-button{
+    background: rgb(0 0 0 / 80%) !important;
+    color: #ededed;
+}
+body.dark .veapp-loading__wrp-outer{
+    background: rgba(0,0,0,0.5) !important;
+    color: #ededed !important; 
+}
+body.dark button.btn-5et,
+body.dark label.btn.btn-5et {
+    background: #303030;
+    color: #ededed;
+}
+body.dark .form-group.group-header{
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid #ededed;
+}
+body.dark form .notes, form .hint{
+    color: #b3b3b3;
+}
+body.dark .dnd5e.sheet.actor .features i.original-class {
+    color: #939393 !important;
+}
+body.dark #module-management .package-list .package-title, #module-management .package-list .package-metadata, #module-management .package-list .package-description{
+    color: #ededed;
+}
+body.dark #module-management .package-list .package-title, 
+body.dark #module-management .package-list .package-metadata, 
+body.dark #module-management .package-list .package-description{
+    color: #ededed;
+}
+.icon.overlay-damage-full{
+    background-image: url("../img/ready-set-roll-compatibility/overlay-damage-full.svg") !important;
+    background-color: #ff3b3b;
+ }
+.icon.overlay-damage-half{
+    background-image: url("../img/ready-set-roll-compatibility/overlay-damage-half.svg") !important;
+    background-color: #ffa500;
+}
+.icon.overlay-damage-quarter{
+    background-image: url("../img/ready-set-roll-compatibility/overlay-damage-quarter.svg") !important;
+    background-color: #ffff00; 
+}
+.icon.overlay-damage-double{
+    background-image: url("../img/ready-set-roll-compatibility/overlay-damage-double.svg") !important;
+}
+.icon.overlay-healing{
+    background-image: url("../img/ready-set-roll-compatibility/overlay-healing.svg") !important;
+    background-color: #00ff00; 
+}
+.icon.overlay-healing-temp{
+    background-image: url("../img/ready-set-roll-compatibility/overlay-healing-temp.svg") !important;
+    background-color: #00d0ff; 
+}
+body.dark .icon.overlay-damage-full{
+    background-image: url("../img/ready-set-roll-compatibility/dark-overlay-damage-full.svg") !important;
+    background-color: #680000;
+}
+body.dark .icon.overlay-damage-half{
+    background-image: url("../img/ready-set-roll-compatibility/dark-overlay-damage-half.svg") !important;
+    background-color: #783200;
+}
+body.dark .icon.overlay-damage-quarter{
+    background-image: url("../img/ready-set-roll-compatibility/dark-overlay-damage-quarter.svg") !important;
+    background-color: #767600;
+}
+body.dark .icon.overlay-damage-double{
+    background-image: url("../img/ready-set-roll-compatibility/dark-overlay-damage-double.svg") !important;
+}
+body.dark .icon.overlay-healing{
+    background-image: url("../img/ready-set-roll-compatibility/dark-overlay-healing.svg") !important;
+    background-color: #004a00;
+}
+body.dark .icon.overlay-healing-temp{
+    background-image: url("../img/ready-set-roll-compatibility/dark-overlay-healing-temp.svg") !important;
+    background-color: #000070;
+}
+body.dark .dnd5e.sheet.actor .inventory-list .item .item-name.rollable .item-image:hover{
+    background-image: url("../img/d20-black.svg") !important;
+}
+body.dark .dnd5e .items-list .items-header {
+    background: rgba(0, 0, 0, 1);
+}
+body.dark #chat-form textarea {
+    background: #000000;
+}
+body.dark .sheet.journal-entry .journal-entry-content {
+    background: 0;
+}
+body.dark .SumoSelect > .CaptionCont,
+body.dark .SumoSelect > .optWrapper > .options {
+    background: #000000;
+}
+body.dark .SumoSelect > .optWrapper > .options li.opt:hover{
+    background-color: #484848;
+}
+body.dark .SumoSelect > .CaptionCont > label > i{
+    background-image: url("../img/caret-down.png");
+}
+body.dark .dnd5e.sheet .crash-training .activity-progress-row .crash-training-completion, 
+body.dark .tidy5e.sheet .crash-training .activity-progress-row .crash-training-completion{
+    color: #dddddd;
+}
+body.dark .rd__h--1,
+body.dark .rd__h--2{
+    color: #e7d57e;
+}
+body.dark .message.damage-log.healing{
+    background: #004c1b;
+}
+body.dark .message.damage-log.damage{
+    background: #460000;
+}
+ol#damage-log .dfce-cm-bottom>.message-content,
+body.dark ol#damage-log .dfce-cm-bottom>.message-content{
+    padding-right: 0;
+}
+body.dark .rd__b-inset{
+    background-color: #3a3a3a;
+}
+body.dark #requestsavingthrow .request-grid > div.selected{
+    background: rgb(82 82 82 0.6);
+}
+body.dark .monks-tokenbar .sheet .items-list .item .item-name{
+    color: #dddddd;
+}
+body.dark #requestsavingthrow .request-grid > div.selected, body.dark #requestsavingthrow .request-grid > div {
+    color: #dddddd;
+}
+body.dark .awesomplete > ul > li {
+    background: #000000;
+}
+body.dark .awesomplete > ul > li:hover{
+    background: #3a3a3a;
+    color: #ffffff;
+}
+body.dark .filepicker .display-modes a {
+    background: #000000;
+}
+body.dark .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle[data-tooltip="Always Prepared"] {
+    color: #973535;
+}

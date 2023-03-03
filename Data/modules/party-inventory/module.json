@@ -1,0 +1,44 @@
+{
+  "id": "party-inventory",
+  "title": "Party Inventory",
+  "description": "Shows items carried by characters flagged as Party Loot in one list.",
+  "authors": [
+    {
+      "name": "Tero Parvinen",
+      "flags": {}
+    }
+  ],
+  "version": "10.1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": [
+    "module/party-inventory.js"
+  ],
+  "styles": [
+    "styles/party-inventory.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/teroparvinen/foundry-party-inventory",
+  "bugs": "https://github.com/teroparvinen/foundry-party-inventory/issues",
+  "manifest": "https://github.com/teroparvinen/foundry-party-inventory/releases/latest/download/module.json",
+  "download": "https://github.com/teroparvinen/foundry-party-inventory/releases/download/v10.1/module.zip"
+}

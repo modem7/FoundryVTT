@@ -1,0 +1,157 @@
+{
+  "tokenActionHud": {  
+    "accept": "Accetta",
+    "addToCombat": "Aggiungi al Combattimento",
+    "blockListLabel": "blockList: nascondi / allowlist: mostra",
+    "cancel": "Annulla",
+    "collapseHud": "Collapse HUD",
+    "combat": "Combattere",
+    "editCategories": "Edit Categories",
+    "endTurn": "End Turn",
+    "expandHud": "Expand HUD",
+    "handlerNotFound": "non trovato, reimposta il gestore dei tiri predefinito.",
+    "lockHud": "Lock HUD",
+    "makeInvisible": "Rendi Invisibile",
+    "makeVisible": "Rendi Visibile",
+    "pushLabelExplanation": "Da che parte vuoi posizionare le Categorie",
+    "removeFromCombat": "Rimuovi dal Combattimento",
+    "title": "Token Action HUD",
+    "token": "Token",
+    "unlockHud": "Unlock HUD",
+    "utility": "Utilità",
+    "settings": {
+      "activeCssAsText": {
+        "hint":  "Mark active actions with an asterisk",
+        "name": "Mark Active Actions with Asterisk"
+      },
+      "allow": {
+        "hint": "GM setting: Allow users with this role (and above) to use the HUD (Requires reload)",
+        "name": "Allow HUD",
+        "choices" : {
+          "4": "Game Master",
+          "3": "Assistant GM",
+          "2": "Trusted Player",
+          "1": "Player"
+        }
+      },
+      "alwaysShowHud": {
+        "hint": "Show the user's assigned character even when no token is selected",
+        "name": "Always Show HUD"
+      },
+      "background": {
+        "hint": "Imposta il colore di sfondo dell'HUD. Questa impostazione viene ignorata con il Dorako UI",
+        "name": "Colore di sfondo dell'HUD"
+      },
+      "buttonBackgroundColor": {
+        "hint": "Imposta il colore di sfondo dei pulsanti dell'HUD. Questa impostazione viene ignorata con il Dorako",
+        "name": "Colore di sfondo del pulsante"
+      },
+      "buttonBorderColor": {
+        "hint": "Imposta il colore del bordo dei pulsanti dell'HUD. Questa impostazione viene ignorata con il Dorako UI",
+        "name": "Colore bordo pulsante"
+      },
+      "clickOpenCategory": {
+        "hint": "Open categories by clicking instead of hovering",
+        "name": "Click to Open Categories"
+      },
+      "debug": {
+        "hint": "Enable debug logging in the console",
+        "name": "Enable Debugging"
+      },
+      "direction": {
+        "hint": "Imposta la direzione in cui si espanderà l'HUD",
+        "name": "Direzione",
+        "choices": {
+          "down": "Fuori uso",
+          "up": "Su"
+        }
+      },
+      "displayCharacterName": {
+        "hint": "When the 'Direction' setting is set to 'Down', display the character name above the hud",
+        "name": "Display Character Name"
+      },
+      "displayIcons": {
+        "hint": "Where available, display icons on the actions",
+        "name": "Display Icons"
+      },
+      "drag": {
+        "hint": "Move the HUD by dragging one of the category buttons",
+        "name": "Enable Dragging"
+      },
+      "enable": {
+        "hint": "Enable the HUD",
+        "name": "Enable HUD for Current User"
+      },
+      "grid": {
+        "hint": "Use a grid layout for actions",
+        "name": "Grid"
+      },
+      "itemMacro": {
+        "hint": "Show item macros, denoted by an (M)",
+        "name": "Show Item Macros",
+        "choices": {
+            "both": "Show original item and item macro",
+            "itemMacro": "Show item macro only",
+            "original": "Show original item only"
+        }
+      },
+      "renderItemOnRightClick": {
+        "hint": "When right-clicking an item, open the item's sheet",
+        "name": "Open Item Sheet on Right-Click"
+      },
+      "reset": {
+        "hint": "WARNING!!! This will reset the hud to its default configuration",
+        "name": "Reset HUD"
+      },
+      "rollHandler": {
+        "hint": "GM setting: Set the module for the HUD to use for handling rolls",
+        "name": "Roll Handler"
+      },
+      "scale": {
+        "hint": "Adjust the scale of the HUD (1 is the default)",
+        "name": "HUD Scale"
+      },
+      "style": {
+        "hint": "Set the style of the HUD",
+        "name": "Style"
+      }
+    },
+    "tagDialog": {
+      "actionDialogDescription": "Add and remove actions. Drag actions to change their order.",
+      "actionDialogTitle": "Customise Actions",
+      "categoryDialogDescription": "Add and remove categories. Drag categories to change their order.",
+      "categoryDialogTitle": "Customise Categories",
+      "clearButton": "Cancella",
+      "options": {
+        "characterCount": {
+          "label": "Characters per Word",
+          "hint": "Limit the characters per word of the actions"
+        },
+        "customWidth": {
+          "label": "Custom Width",
+          "units": "(Pixels)",
+          "hint": "Custom width for the subcategories"
+        },
+        "grid": {
+          "label": "Grid",
+          "hint": "Grid layout for actions"
+        },
+        "image": {
+          "label": "Image",
+          "hint": "Image on this button"
+        },
+        "showCategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this button's title"
+        },
+        "showSubcategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this subcategory's title"
+        }
+      },
+      "subcategoryDialogDescription": "Add and remove subcategories. Select core subcategories from the list or enter free text for macros. Drag subcategories to change their order.",
+      "subcategoryDialogTitle": "Customise Subcategories",
+      "tagPlaceholder": "Scelte (diviso con punto e virgola)"
+    }
+  }
+}

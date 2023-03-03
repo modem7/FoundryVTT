@@ -1,0 +1,40 @@
+{
+  "title": "Drop My Torch",
+  "description": "Allow creatures to easily drop the light source they're carrying into a token in their space.",
+  "manifest": "https://gitlab.com/derekstucki/drop-my-torch/-/raw/main/module.json",
+  "download": "https://gitlab.com/derekstucki/drop-my-torch/-/raw/main/drop-my-torch.zip",
+  "changelog": "https://gitlab.com/derekstucki/drop-my-torch/-/raw/main/ChangeLog.md",
+  "readme": "https://gitlab.com/derekstucki/drop-my-torch/-/raw/main/README.md",
+  "version": "0.2.5",
+  "url": "https://gitlab.com/derekstucki/drop-my-torch",
+  "packs": [
+    {
+      "name": "drop-my-torch-tokens-dnd5e",
+      "label": "Drop My Torch tokens for DnD5e",
+      "path": "packs/drop-my-torch-tokens-dnd5e.db",
+      "system": "dnd5e",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "drop-my-torch-macros",
+      "label": "Drop My Torch macros",
+      "path": "packs/drop-my-torch-macros.db",
+      "type": "Macro",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "id": "drop-my-torch",
+  "authors": [
+    {
+      "name": "derekstucki",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  }
+}

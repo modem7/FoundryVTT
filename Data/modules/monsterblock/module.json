@@ -1,0 +1,88 @@
+{
+  "title": "Monster Blocks",
+  "description": "An NPC sheet designed to emulate standard 5e monster stat blocks as faithfully as possible.",
+  "authors": [
+    {
+      "name": "zeel",
+      "email": "zeel02@gmail.com",
+      "url": "https://github.com/zeel01",
+      "discord": "zeel#4200",
+      "flags": {}
+    }
+  ],
+  "version": "3.3.5",
+  "esmodules": [
+    "monsterblock.js"
+  ],
+  "styles": [
+    "monsterblock.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json",
+      "flags": {}
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json",
+      "flags": {}
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json",
+      "flags": {}
+    }
+  ],
+  "manifest": "https://github.com/zeel01/MonsterBlocks/releases/latest/download/module.json",
+  "url": "https://github.com/zeel01/MonsterBlocks",
+  "download": "https://github.com/zeel01/MonsterBlocks/releases/download/v3.3.5/monsterblock.zip",
+  "readme": "https://github.com/zeel01/MonsterBlocks/blob/master/readme.md",
+  "bugs": "https://github.com/zeel01/MonsterBlocks/issues",
+  "changelog": "https://github.com/zeel01/MonsterBlocks/releases",
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/zeel01/MonsterBlocks/master/examples/ancientRedDragon_5.png",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "icon",
+      "url": "https://avatars2.githubusercontent.com/u/1721836",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "id": "monsterblock",
+  "relationships": {
+    "requires": [
+      {
+        "id": "_mathjs",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/mathjs-lib/master/module.json",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
+}

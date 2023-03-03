@@ -1,0 +1,157 @@
+{
+  "tokenActionHud": {
+    "accept": "Accept",
+    "addToCombat": "Zum Kampf Hinzufügen",
+    "blockListLabel": "blockList: hide / allowlist: show",
+    "cancel": "Cancel",
+    "collapseHud": "Collapse HUD",
+    "combat": "Kampf",
+    "editCategories": "Edit Categories",
+    "endTurn": "End Turn",
+    "expandHud": "Expand HUD",
+    "handlerNotFound": "not found, reverting to core roller.",
+    "lockHud": "Lock HUD",
+    "makeInvisible": "Unsichtbar Machen",
+    "makeVisible": "Sichtbar Machen",
+    "pushLabelExplanation": "Show categories on which side?",
+    "removeFromCombat": "Aus Kampf Entfernen",
+    "title": "Token Action HUD",
+    "token": "Token",
+    "unlockHud": "Unlock HUD",
+    "utility": "Nützliches",
+    "settings": {
+      "activeCssAsText": {
+        "hint":  "Mark active actions with an asterisk",
+        "name": "Mark Active Actions with Asterisk"
+      },
+      "allow": {
+        "hint": "GM setting: Allow users with this role (and above) to use the HUD (Requires reload)",
+        "name": "Allow HUD",
+        "choices" : {
+          "4": "Game Master",
+          "3": "Assistant GM",
+          "2": "Trusted Player",
+          "1": "Player"
+        }
+      },
+      "alwaysShowHud": {
+        "hint": "Show the user's assigned character even when no token is selected",
+        "name": "Always Show HUD"
+      },
+      "background": {
+        "hint": "Set the background color of the HUD. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "HUD Background Color"
+      },
+      "buttonBackgroundColor": {
+        "hint": "Set the background color of the HUD buttons. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Button Background Color"
+      },
+      "buttonBorderColor": {
+        "hint": "Set the border color of the HUD buttons. This setting is ignored with the Dorako UI style and requires one module of 'Color Picker', 'Color Settings', or 'libThemer'",
+        "name": "Button Border Color"
+      },
+      "clickOpenCategory": {
+        "hint": "Open categories by clicking instead of hovering",
+        "name": "Click to Open Categories"
+      },
+      "debug": {
+        "hint": "Enable debug logging in the console",
+        "name": "Enable Debugging"
+      },
+      "direction": {
+        "hint": "Legen Sie die Richtung fest, in die das HUD erweitert wird",
+        "name": "Richtung",
+        "choices": {
+          "down": "Runter",
+          "up": "Hoch"
+        }
+      },
+      "displayCharacterName": {
+        "hint": "When the 'Direction' setting is set to 'Down', display the character name above the hud",
+        "name": "Display Character Name"
+      },
+      "displayIcons": {
+        "hint": "Where available, display icons on the actions",
+        "name": "Display Icons"
+      },
+      "drag": {
+        "hint": "Move the HUD by dragging one of the category buttons",
+        "name": "Enable Dragging"
+      },
+      "enable": {
+        "hint": "Enable the HUD",
+        "name": "Enable HUD for Current User"
+      },
+      "grid": {
+        "hint": "Use a grid layout for actions",
+        "name": "Grid"
+      },
+      "itemMacro": {
+        "hint": "Show item macros, denoted by an (M)",
+        "name": "Show Item Macros",
+        "choices": {
+            "both": "Show original item and item macro",
+            "itemMacro": "Show item macro only",
+            "original": "Show original item only"
+        }
+      },
+      "renderItemOnRightClick": {
+        "hint": "When right-clicking an item, open the item's sheet",
+        "name": "Open Item Sheet on Right-Click"
+      },
+      "reset": {
+        "hint": "WARNING!!! This will reset the hud to its default configuration",
+        "name": "Reset HUD"
+      },
+      "rollHandler": {
+        "hint": "GM setting: Set the module for the HUD to use for handling rolls",
+        "name": "Roll Handler"
+      },
+      "scale": {
+        "hint": "Adjust the scale of the HUD (1 is the default)",
+        "name": "HUD Scale"
+      },
+      "style": {
+        "hint": "Set the style of the HUD",
+        "name": "Style"
+      }
+    },
+    "tagDialog": {
+      "actionDialogDescription": "Add and remove actions. Drag actions to change their order.",
+      "actionDialogTitle": "Customise Actions",
+      "categoryDialogDescription": "Add and remove categories. Drag categories to change their order.",
+      "categoryDialogTitle": "Customise Categories",
+      "clearButton": "Clear",
+      "options": {
+        "characterCount": {
+          "label": "Characters per Word",
+          "hint": "Limit the characters per word of the actions"
+        },
+        "customWidth": {
+          "label": "Custom Width",
+          "units": "(Pixels)",
+          "hint": "Custom width for the subcategories"
+        },
+        "grid": {
+          "label": "Grid",
+          "hint": "Grid layout for actions"
+        },
+        "image": {
+          "label": "Image",
+          "hint": "Image on this button"
+        },
+        "showCategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this button's title"
+        },
+        "showSubcategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this subcategory's title"
+        }
+      },
+      "subcategoryDialogDescription": "Add and remove subcategories. Select core subcategories from the list or enter free text for macros. Drag subcategories to change their order.",
+      "subcategoryDialogTitle": "Customise Subcategories",
+      "tagPlaceholder": "Choices (split with semi-colon)"
+    }
+  }
+}

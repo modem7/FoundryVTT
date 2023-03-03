@@ -1,0 +1,652 @@
+{
+  "version": "1.0.4",
+  "presets": {
+    "potion": {
+      "metropolis": {
+        "name": "Metropolis",
+        "default": true,
+        "common": {
+          "min": 60,
+          "max": 100,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 30,
+          "max": 50,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 10,
+          "max": 20,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "min": 4,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "legendary": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": false,
+          "type": "range"
+        }
+      },
+      "city": {
+        "name": "City",
+        "default": true,
+        "common": {
+          "min": 20,
+          "max": 30,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 5,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 3,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "legendary": {
+          "min": 1,
+          "max": 1,
+          "allow_duplicates": false,
+          "type": "range"
+        }
+      },
+      "village": {
+        "name": "Town",
+        "default": true,
+        "common": {
+          "min": 5,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 1,
+          "max": 1,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.5
+        },
+        "legendary": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.2
+        }
+      },
+      "roadside_stall": {
+        "name": "Roadside Stall",
+        "default": true,
+        "common": {
+          "min": 1,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.6
+        },
+        "rare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.3
+        },
+        "veryrare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.1
+        },
+        "legendary": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.03
+        }
+      }
+    },
+    "spell": {
+      "metropolis": {
+        "name": "Metropolis",
+        "default": true,
+        "0": {
+          "min": 20,
+          "max": 30,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "1": {
+          "min": 15,
+          "max": 20,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "2": {
+          "min": 8,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "3": {
+          "min": 8,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "4": {
+          "min": 8,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "5": {
+          "min": 6,
+          "max": 8,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "6": {
+          "min": 6,
+          "max": 8,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "7": {
+          "min": 4,
+          "max": 6,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "8": {
+          "min": 2,
+          "max": 4,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "9": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": true,
+          "type": "range"
+        }
+      },
+      "city": {
+        "name": "City",
+        "default": true,
+        "0": {
+          "min": 10,
+          "max": 25,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "1": {
+          "min": 10,
+          "max": 15,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "2": {
+          "min": 6,
+          "max": 8,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "3": {
+          "min": 4,
+          "max": 6,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "4": {
+          "min": 4,
+          "max": 6,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "5": {
+          "min": 4,
+          "max": 6,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "6": {
+          "min": 3,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "7": {
+          "min": 2,
+          "max": 4,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "8": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "9": {
+          "min": 1,
+          "max": 1,
+          "allow_duplicates": true,
+          "type": "range"
+        }
+      },
+      "village": {
+        "name": "Village",
+        "default": true,
+        "0": {
+          "min": 10,
+          "max": 15,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "1": {
+          "min": 5,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "2": {
+          "min": 3,
+          "max": 6,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "3": {
+          "min": 3,
+          "max": 6,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "4": {
+          "min": 2,
+          "max": 4,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "5": {
+          "min": 2,
+          "max": 4,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "6": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "7": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "8": {
+          "chance": 0.5,
+          "allow_duplicates": true,
+          "type": "chance"
+        },
+        "9": {
+          "chance": 0.1,
+          "allow_duplicates": true,
+          "type": "chance"
+        }
+      },
+      "roadside_stall": {
+        "name": "Roadside Stall",
+        "default": true,
+        "0": {
+          "min": 5,
+          "max": 8,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "1": {
+          "min": 3,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "2": {
+          "min": 2,
+          "max": 4,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "3": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "4": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "5": {
+          "chance": 0.5,
+          "allow_duplicates": true,
+          "type": "chance"
+        },
+        "6": {
+          "chance": 0.2,
+          "allow_duplicates": true,
+          "type": "chance"
+        },
+        "7": {
+          "chance": 0.1,
+          "allow_duplicates": true,
+          "type": "chance"
+        },
+        "8": {
+          "chance": 0.05,
+          "allow_duplicates": true,
+          "type": "chance"
+        },
+        "9": {
+          "chance": 0.01,
+          "allow_duplicates": true,
+          "type": "chance"
+        }
+      }
+    },
+    "magic_item": {
+      "metropolis": {
+        "name": "Metropolis",
+        "default": true,
+        "common": {
+          "min": 20,
+          "max": 25,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 10,
+          "max": 20,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 3,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "legendary": {
+          "min": 1,
+          "max": 1,
+          "allow_duplicates": false,
+          "type": "range"
+        }
+      },
+      "city": {
+        "name": "City",
+        "default": true,
+        "common": {
+          "min": 10,
+          "max": 15,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 3,
+          "max": 8,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "legendary": {
+          "min": 0,
+          "max": 1,
+          "allow_duplicates": false,
+          "type": "range"
+        }
+      },
+      "village": {
+        "name": "Town",
+        "default": true,
+        "common": {
+          "min": 3,
+          "max": 8,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 0,
+          "max": 1,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.3
+        },
+        "legendary": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.1
+        }
+      },
+      "roadside_stall": {
+        "name": "Roadside Stall",
+        "default": true,
+        "common": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.4
+        },
+        "rare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.1
+        },
+        "veryrare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.05
+        },
+        "legendary": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.01
+        }
+      }
+    },
+    "equipment": {
+      "metropolis": {
+        "name": "Metropolis",
+        "default": true,
+        "common": {
+          "min": 40,
+          "max": 50,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 10,
+          "max": 20,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 5,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "min": 3,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "legendary": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": false,
+          "type": "range"
+        }
+      },
+      "city": {
+        "name": "City",
+        "default": true,
+        "common": {
+          "min": 20,
+          "max": 30,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 5,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 3,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "min": 1,
+          "max": 2,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "legendary": {
+          "min": 1,
+          "max": 1,
+          "allow_duplicates": false,
+          "type": "range"
+        }
+      },
+      "village": {
+        "name": "Town",
+        "default": true,
+        "common": {
+          "min": 5,
+          "max": 10,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "min": 1,
+          "max": 3,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "rare": {
+          "min": 1,
+          "max": 1,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "veryrare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.5
+        },
+        "legendary": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.2
+        }
+      },
+      "roadside_stall": {
+        "name": "Roadside Stall",
+        "default": true,
+        "common": {
+          "min": 1,
+          "max": 5,
+          "allow_duplicates": true,
+          "type": "range"
+        },
+        "uncommon": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.6
+        },
+        "rare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.3
+        },
+        "veryrare": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.1
+        },
+        "legendary": {
+          "type": "chance",
+          "allow_duplicates": false,
+          "chance": 0.03
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="flexcol">
+        {{#each items as |item id|}}
+        <div class="multiattack-5e-item" id="{{item.id}}">
+                <label for="{{item.id}}"><img class="multiattack-5e-img" src="{{item.img}}" title="{{item.name}}"/></label>
+                <label for="{{item.id}}" class="multiattack-5e-label">{{item.name}}</label>
+                <input type="number" class="multiattack-5e-input" id="{{item.id}}input" placeholder="1" value="{{item.count}}">
+                <input type="checkbox" class="multiattack-5e-checkbox" id="{{item.id}}checkbox" {{#if item.checked}}checked{{/if}}>
+        </div>
+        {{/each}}
+        <br>
+        <div class="multiattack-5e-tool-flex">
+                <button class="multiattack-5e-button" id="setDefaultButton">{{ localize "multiattack-5e.tool.dialog.setDefault" }}</button>
+                <button class="multiattack-5e-button" id="clearDefaultButton">{{ localize "multiattack-5e.tool.dialog.clearDefault" }}</button>
+        </div>
+        <br>
+</div>

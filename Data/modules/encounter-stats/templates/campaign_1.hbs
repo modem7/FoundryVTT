@@ -1,0 +1,235 @@
+<div class="fvtt-enc-stats_top fvtt-enc-stats_campaign_top">
+  <div class="flexrow">
+      <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.party_section_title"}}</h2>
+  </div>
+  <div class="flexrow">
+      <table>
+          <thead>
+            <tr>
+              <td>{{localize "EncounterStats.template.date"}}</td>
+              <td>{{localize "EncounterStats.template.party_average_damage_round"}}</td>
+              <td>{{localize "EncounterStats.template.party_lowest_damage_round"}}</td>
+              <td>{{localize "EncounterStats.template.party_highest_damage_round"}}</td>
+              <td>{{localize "EncounterStats.template.party_total_damage"}}</td>
+            </tr>
+        </thead>
+        <tbody>
+          {{#each partySummary}}
+            <tr>
+              <td>{{date}}</td>
+              <td>{{averageDamagePerRound}}</td>
+              <td>{{lowestDamagePerRound}}</td>
+              <td>{{highestDamagePerRound}}</td>
+              <td>{{totalDamage}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+  </div>
+</div>
+<div class="fvtt-enc-stats_top fvtt-enc-stats_campaign_top">
+  <div class="flexrow">
+    <div class="fvtt-enc-stats_actor_stat">
+      <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.MostNatural20s"}}</h2>
+      <ol class="fvtt-enc-stats_campaign_ol">
+        {{#each nat20}}
+        <li class="item flexrow campaign-row">
+          <div class="item-name">
+            {{name}}
+          </div>
+          <div class="item-name">
+            {{value}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+    <div class="fvtt-enc-stats_actor_stat">
+      <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.MostNatural1s"}}</h2>
+      <ol class="fvtt-enc-stats_campaign_ol">
+        {{#each nat1}}
+        <li class="item flexrow campaign-row">
+          <div class="item-name">
+            {{name}}
+          </div>
+          <div class="item-name">
+            {{value}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+    <div class="fvtt-enc-stats_actor_stat">
+      <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.most_healing"}}</h2>
+      <ol class="fvtt-enc-stats_campaign_ol">
+        {{#each heals}}
+        <li class="item flexrow campaign-row">
+          <div class="item-name">
+            {{name}}
+          </div>
+          <div class="item-name">
+            {{value}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+    <div class="fvtt-enc-stats_actor_stat">
+      <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.most_kills"}}</h2>
+      <ol class="fvtt-enc-stats_campaign_ol">
+        {{#each kills}}
+        <li class="item flexrow campaign-row">
+          <div class="item-name">
+            {{name}}
+          </div>
+          <div class="item-name">
+            {{value}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="fvtt-enc-stats">
+  <hr>
+  <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.Natural20s"}}</h2>
+  <div>
+    {{#each criticalHistory}}
+    <p>{{date}}</p>
+    <ol class="item-list">
+      {{#each entries}}
+      <li class="item flexrow campaign-row">
+        <div class="item-name">
+          {{actorName}}
+        </div>
+        <div class="item-name">
+          {{flavor}}
+        </div>
+        <div class="item-name">
+          {{date}}
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+    {{/each}}
+  </div>
+  <hr>
+  <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.Natural1s"}}</h2>
+  <div>
+    {{#each fumbleHistory}}
+    <p>{{date}}</p>
+    <ol class="item-list">
+      {{#each entries}}
+      <li class="item flexrow campaign-row">
+        <div class="item-name">
+          {{actorName}}
+        </div>
+        <div class="item-name">
+          {{flavor}}
+        </div>
+        <div class="item-name">
+          {{date}}
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+    {{/each}}
+  </div>
+  <hr>
+  <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.Healing"}}</h2>
+  <div>
+    {{#each healsHistory}}
+    <p>{{date}}</p>
+    <ol class="item-list">
+      {{#each entries}}
+      <li class="item flexrow campaign-row">
+        <div class="item-name">
+          {{actorName}}
+        </div>
+        <div class="item-name">
+          {{flavor}}
+        </div>
+        <div class="item-name">
+          {{total}}
+        </div>
+        <div class="item-name">
+          {{date}}
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+    {{/each}}
+  </div>
+  <hr>
+  <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.kills"}}</h2>
+  <div>
+    {{#each killsHistory}}
+    <p>{{date}}</p>
+    <ol class="item-list">
+      {{#each entries}}
+      <li class="item flexrow campaign-row">
+        <div class="item-name">
+          {{actorName}}
+        </div>
+        <div class="item-name">
+          {{flavor}}
+        </div>
+        <div class="item-name">
+          {{date}}
+        </div>
+      </li>
+      {{/each}}
+    </ol>
+    {{/each}}
+  </div>
+  {{#if rollstreak}}
+    <hr>
+    <h2 class="fvtt-enc-stats_enemies">{{localize "EncounterStats.template.roll_streaks"}}</h2>
+    <div>
+      {{#each rollstreak}}
+      <p>{{date}}</p>
+      <ol class="item-list">
+        {{#each entries}}
+        <li class="item flexrow campaign-row">
+          <div class="item-name">
+            {{actorName}}
+          </div>
+          <div class="item-name">
+            {{localize "EncounterStats.template.rolled"}} {{{flavor}}} {{localize "EncounterStats.template.times"}}
+          </div>
+          <div class="item-name">
+            {{date}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      {{/each}}
+    </div>
+  {{/if}}
+
+  {{#each customEventHistory}}
+  <hr>
+  <h2 class="fvtt-enc-stats_enemies">{{name}}</h2>
+    {{#each events}}
+    <div>
+      <p>{{date}}</p>
+      <ol class="item-list">
+        {{#each entries}}
+        <li class="item flexrow campaign-row">
+          <div class="item-name">
+            {{actorName}}
+          </div>
+          <div class="item-name">
+            {{flavor}}
+          </div>
+          <div class="item-name">
+            {{date}}
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+    {{/each}}
+  {{/each}}
+</div>

@@ -1,0 +1,30 @@
+{
+  "id": "dark-mode-5e",
+  "title": "DnD Dark Mode - 5th Edition",
+  "description": "A simple module with the aim to bring a dark mode to FoundryVTT for DnD 5E.",
+  "authors": [
+    {
+      "name": "ZeroXNoxus",
+      "flags": {}
+    }
+  ],
+  "version": "1.2.1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "scripts": [
+    "/script/dark-mode.js"
+  ],
+  "styles": [
+    "/css/dark-mode.css",
+    "/css/black-white.css",
+    "/css/programmer.css"
+  ],
+  "manifest": "https://github.com/ZeroXNoxus/dark-mode-5e/releases/download/latest/module.json",
+  "url": "https://github.com/ZeroXNoxus/dark-mode-5e",
+  "download": "https://github.com/ZeroXNoxus/dark-mode-5e/archive/refs/tags/latest.zip",
+  "readme": "https://github.com/ZeroXNoxus/dark-mode-5e/blob/latest/README.md",
+  "bugs": "https://github.com/ZeroXNoxus/dark-mode-5e/issues",
+  "changelog": "https://github.com/ZeroXNoxus/dark-mode-5e/releases"
+}

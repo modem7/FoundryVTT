@@ -1,0 +1,18 @@
+<h4 class="attribute-name box-title">{{localize "DND5E.Speed"}}</h4>
+{{#each movement as |move|~}}
+	<span class="editable-wrapper{{#if (and move.value @index)}} optional-comma{{/if}}">
+		{{~#if (and move.value move.showLabel)}}{{move.label}} {{/if~}}
+		{{#if move.value}}{{move.value}}{{/if~}}
+		{{~#if move.value}} {{move.unit}}{{/if~}}
+		{{~#if (and move.fly ../data.attributes.movement.hover)~}}
+			<span class="no-break nocaps">
+				<span class="paren">(</span>
+					{{~localize "DND5E.MovementHover"~}}
+				<span class="paren">)</span>
+			</span>
+		{{~/if~}}
+	</span>
+{{~/each}}
+<a class="config-button" data-action="movement" title="{{localize "DND5E.MovementConfig"}}">
+	<i class="fas fa-cog"></i>{{~" "~}}
+</a>

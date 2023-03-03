@@ -1,0 +1,45 @@
+#convenient-effects-dialog {
+  margin-bottom: 1em;
+}
+
+#convenient-effects-dialog label {
+  flex: 0 0 120px;
+}
+
+#convenient-effects-dialog select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#nested-effect-descriptions {
+  flex-direction: column;
+}
+
+#remove-effects-dialog {
+  margin-bottom: 1em;
+}
+
+#remove-effects-dialog .remove-effects-actor-group {
+  margin-top: 1em;
+}
+
+#remove-effects-dialog .remove-effects-effect-group {
+  margin-left: 1em;
+}
+
+.integration-icon {
+  margin-right: 12px;
+  flex: none;
+  align-self: center;
+}
+
+#nested-effects-config .title {
+  font-weight: bold;
+}
+
+#nested-effects-config button {
+  flex: 0 0 24px;
+  line-height: 24px;
+  margin: -1px 0 -1px 4px;
+  order: 99;
+} 

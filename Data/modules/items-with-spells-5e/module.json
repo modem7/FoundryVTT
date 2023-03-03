@@ -1,0 +1,64 @@
+{
+  "id": "items-with-spells-5e",
+  "title": "Items with Spells DnD5e",
+  "description": "A module that allows spells to be attached to Items, Features, etc.",
+  "version": "1.3.1",
+  "authors": [
+    {
+      "name": "Andrew Krigline",
+      "discord": "Calego#0914",
+      "url": "https://github.com/ElfFriend-DnD",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "/scripts/items-with-spells-5e.js"
+  ],
+  "styles": [
+    "/styles/items-with-spells-5e.css"
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "2.1.2"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "compatibility": {
+          "minimum": "1.12.7.1"
+        },
+        "type": "module"
+      }
+    ]
+  },
+  "bugs": "https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e/issues",
+  "changelog": "https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e/releases",
+  "download": "https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e/releases/download/1.3.1/module.zip",
+  "manifest": "https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e/releases/latest/download/module.json",
+  "readme": "https://raw.githubusercontent.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e/main/README.md",
+  "url": "https://github.com/ElfFriend-DnD/foundryvtt-items-with-spells-5e",
+  "flags": {
+    "allowBugReporter": true,
+    "fvttdevleague": {
+      "package-jam": 2022
+    }
+  }
+}

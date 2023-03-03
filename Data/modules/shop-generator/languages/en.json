@@ -1,0 +1,29 @@
+{
+    "SHOP_GEN": {
+        "settings": {
+            "potion_compendium": {
+                "name": "Potion Compendium",
+                "hint": "Name of the compendium which contains all possible potions to be present in a potion shop."
+            },
+            "spell_compendium": {
+                "name": "Spell Compendium",
+                "hint": "Name of the compendium which contains all possible spells to be present as spell scrolls/gems in a magic shop."
+            },
+            "magic_item_compendium": {
+                "name": "Magic Item Compendium",
+                "hint": "Name of the compendium which contains all possible magic items to be present in a potion shop."
+            },
+            "equipment_compendium": {
+                "name": "Equipment Compendium",
+                "hint": "Name of the compendium which contains all possible equipment to be present in an equipment shop."
+            },
+            "price_override": {
+                "name": "Price Overrides",
+                "hint": "Specify a valid JSON string containing price overrides. See module documentation for price override JSON string format"
+            }
+        },
+        "UI": {
+            "items-button": "Shop Generator"
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+  "tokenActionHud": {
+    "accept": "Accepter",
+    "addToCombat": "Ajouter au Combat",
+    "blockListLabel": "liste bloquée : caché / liste autorisée: affiché",
+    "cancel": "Annuler",
+    "collapseHud": "Collapse HUD",
+    "combat": "Combat",
+    "editCategories": "Edit Categories",
+    "endTurn": "End Turn",
+    "expandHud": "Expand HUD",
+    "handlerNotFound": "non trouvé, retour au gestionnaire par défaut.",
+    "lockHud": "Lock HUD",
+    "makeInvisible": "Rendre Invisible",
+    "makeVisible": "Rendre Visible",
+    "pushLabelExplanation": "Montrer les catégories de quel côté?",
+    "removeFromCombat": "Retirer du Combat",
+    "title": "Token Action HUD",
+    "token": "Token",
+    "unlockHud": "Unlock HUD",
+    "utility": "Utilitaire",
+    "settings": {
+      "activeCssAsText": {
+        "hint": "Si activée, les boutons qui peuvent être actifs seront également marqués d'un astérisque pour indiquer leur activité. Les boutons inactifs n'auront pas d'astérisque.",
+        "name": "Marquer le CSS actif avec du texte"
+      },
+      "allow": {
+        "hint": "GM setting: Allow users with this role (and above) to use the HUD (Requires reload)",
+        "name": "Allow HUD",
+        "choices" : {
+          "4": "Game Master",
+          "3": "Assistant GM",
+          "2": "Trusted Player",
+          "1": "Player"
+        }
+      },
+      "alwaysShowHud": {
+        "hint": "Si l'utilisateur a un personnage assigné, le HUD affichera celui-ci par défaut quand aucun token n'est sélectionné.",
+        "name": "Toujours afficher le HUD"
+      },
+      "background": {
+        "hint": "Définir la couleur de fond du HUD. Ce paramètre est ignoré avec le Dorako UI",
+        "name": "Couleur de fond du HUD"
+      },
+      "buttonBackgroundColor": {
+        "hint": "Définir la couleur d'arrière-plan des boutons du HUD. Ce paramètre est ignoré avec le Dorako UI",
+        "name": "Couleur d'arrière-plan du bouton"
+      },
+      "buttonBorderColor": {
+        "hint": "Définir la couleur de la bordure des boutons HUD. Ce paramètre est ignoré avec le Dorako Dorako UI",
+        "name": "Couleur de la bordure du bouton"
+      },
+      "clickOpenCategory": {
+        "hint": "Si activée, les catégories s'ouvriront sur un clic plutôt qu'un survol.",
+        "name": "Clic pour ouvrir les catégories"
+      },
+      "debug": {
+        "hint": "Active le log de debug. (Cette fonction est en quelque sorte tombée en désuétude, ne vous attendez pas à ce qu'elle soit très utile)",
+        "name": "Activer le debug"
+      },
+      "direction": {
+        "hint": "Définissez la direction dans laquelle le HUD se développera",
+        "name": "Direction",
+        "choices": {
+          "down": "Vers le bas",
+          "up": "En haut"
+        }
+      },
+      "displayCharacterName": {
+        "hint": "Affiche un titre au-dessus du HUD, normalement l'alias du token sélectionné.",
+        "name": "Afficher le titre du HUD"
+      },
+      "displayIcons": {
+        "hint": "Si activée, l'image de l'action sera affichée sur le bouton HUD lorsqu'il est disponible.",
+        "name": "Afficher les icônes d'action"
+      },
+      "drag": {
+        "hint": "Move the HUD by dragging one of the category buttons",
+        "name": "Enable Dragging"
+      },
+      "enable": {
+        "hint": " Si activée, le HUD est actif pour le joueur. Ne vient pas écraser les permissions données au joueur.",
+        "name": "Activer le HUD pour le joueur actuel"
+      },
+      "grid": {
+        "hint": "Use a grid layout for actions",
+        "name": "Grid"
+      },
+      "itemMacro": {
+        "hint": "Sélectionne quels objets seront montrés dans l'inventaire.",
+        "name": "Item-Macro: macro d'objet, objet original, ou les deux",
+        "choices": {
+          "both": "Montrer l'objet original et l'objet Item Macro",
+          "itemMacro": "Montrer l'objet Item Macro",
+          "original": "Montrer l'objet original"
+        }
+      },
+      "renderItemOnRightClick": {
+        "hint": "Si activée, un clic droit sur un objet dans le HUD fera apparaître sa fiche (conflit potentiel avec d'autres paramètres qui utilisent le clic droit).",
+        "name": "Affiche la fiche avec un clic droit"
+      },
+      "reset": {
+        "hint": "WARNING!!! This will reset the hud to its default configuration",
+        "name": "Reset HUD"
+      },
+      "rollHandler": {
+        "hint": "Choisissez quel module recevra les actions du HUD.",
+        "name": "HUD gestionnnaire de dés"
+      },
+      "scale": {
+        "hint": "Ajuster l'échelle du HUD en termes de pourcentage (100 étant la valeur par défaut).",
+        "name": "Echelle HUD"
+      },
+      "style": {
+        "hint": "Définir le style du HUD",
+        "name": "Style"
+      }
+    },
+    "tagDialog": {
+      "actionDialogDescription": "Add and remove actions. Drag actions to change their order.",
+      "actionDialogTitle": "Customise Actions",
+      "categoryDialogDescription": "Add and remove categories. Drag categories to change their order.",
+      "categoryDialogTitle": "Customise Categories",
+      "clearButton": "Clear",
+      "options": {
+        "characterCount": {
+          "label": "Characters per Word",
+          "hint": "Limit the characters per word of the actions"
+        },
+        "customWidth": {
+          "label": "Custom Width",
+          "units": "(Pixels)",
+          "hint": "Custom width for the subcategories"
+        },
+        "grid": {
+          "label": "Grid",
+          "hint": "Grid layout for actions"
+        },
+        "image": {
+          "label": "Image",
+          "hint": "Image on this button"
+        },
+        "showCategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this button's title"
+        },
+        "showSubcategoryTitle": {
+          "label": "Show Title",
+          "hint": "Show this subcategory's title"
+        }
+      },
+      "subcategoryDialogDescription": "Add and remove subcategories. Select core subcategories from the list or enter free text for macros. Drag subcategories to change their order.",
+      "subcategoryDialogTitle": "Customise Subcategories",
+      "tagPlaceholder": "Choix (séparation avec point-virgule)"
+    }
+  }
+}

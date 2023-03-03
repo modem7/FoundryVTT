@@ -1,0 +1,88 @@
+<div class="tab flexrow active" data-group="primary" data-tab="description">
+
+  <div class="item-properties">
+    <div class="form-group">
+      <label>{{ localize "DND5E.Quantity" }}</label>
+      <input type="text" name="system.quantity" value="{{system.quantity}}" data-dtype="Number" />
+    </div>
+
+    <div class="form-group">
+      <label>{{ localize "DND5E.Weight" }}</label>
+      <input type="text" name="systen.weight" value="{{system.weight}}" data-dtype="Number" />
+    </div>
+
+    <div class="form-group">
+      <label>{{ localize "DND5E.Price" }}</label>
+      {{#if isGM}}
+      {{numberInput system.price.value name="system.price.value"}}
+      {{#if system.price.denomination}}
+      <select name="system.price.denomination">
+        {{selectOptions config.currencies selected=system.price.denomination labelAttr="abbreviation"}}
+      </select>
+      {{/if}}
+      {{else}}
+      {{system.price.value}} 
+      {{#if system.price.denomination}}
+      {{system.price.denomination}}
+      {{/if}}
+      {{/if}}
+    </div>
+
+    {{#if isGM}}
+    <div class="form-group">
+      <label>{{localize 'DND5E.ItemContainerCapacity'}}</label>
+      <div class="form-fields">
+        <input type="text" name="system.capacity.value" value="{{system.capacity.value}}" data-dtype="Number"
+          placeholder="-">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>{{localize 'DND5E.ItemContainerCapacityType'}}</label>
+      <select name="context.capacity.type">
+        {{#select system.capacity.type}}
+        {{#each config.itemCapacityTypes}}
+        <option value="{{@key}}">{{localize this}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Bag Weight</label>
+      <input type="number" name="flags.itemcollection.bagWeight" value="{{flags.itemcollection.bagWeight}}">
+    </div>
+    <div class="form-group">
+      <label>Bag Price</label>
+      <input type="number" name="flags.itemcollection.bagPrice" value="{{flags.itemcollection.bagPrice}}">
+       gp
+    </div>
+    {{else}}
+    <div class="form-group">
+      <label>{{localize 'DND5E.ItemContainerCapacity'}}</label> {{system.capacity.value}}
+
+    </div>
+
+    <div class="form-group">
+      <label>{{localize 'DND5E.ItemContainerCapacityType'}}</label> {{system.capacity.type}}
+    </div>
+
+    <div class="form-group">
+      <label>Bag Weight</label> {{flags.itemcollection.bagWeight}}
+    </div>
+    <div class="form-group">
+      <label>Bag Price</label> {{flags.itemcollection.bagPrice}} gp
+    </div>
+    {{/if}}
+    {{#if itemProperties.length}}
+    <h4 class="properties-header">{{localize "DND5E.Properties"}}</h4>
+    <ol class="properties-list">
+      {{#each itemProperties}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ol>
+    {{/if}}
+  </div>
+  {{editor descriptionHTML target="system.description.value" button=true editable=editable engine="prosemirror"
+  collaborate=false}}
+</div>

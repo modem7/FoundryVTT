@@ -1,0 +1,13 @@
+{
+  "DiceToolTip.AbilityCheck": "Ability Check",
+  "DiceToolTip.Attack": "Attack",
+  "DiceToolTip.Damage": "Damage",
+  "DiceToolTip.ErrorItemWithoutAttack": "You may not place an Attack Roll with this Item.",
+  "DiceToolTip.ErrorItemWithoutDamage": "You may not make a Damage Roll with this Item.",
+  "DiceToolTip.Healing": "Healing",
+  "DiceToolTip.HitDice": "Hit Dice",
+  "DiceToolTip.Save": "Save",
+  "DiceToolTip.SavingThrow": "Saving Throw",
+  "DiceToolTip.SkillCheck": "Skill Check",
+  "DiceToolTip.VersatileDamage": "Versatile"
+}

@@ -1,0 +1,34 @@
+{
+    "name": "rarity-colors",
+    "title": "Rarity Colors",
+    "description": "Auto colors inventory items based on visibility",
+    "version": "0.1.05",
+    "library": "false",
+    "manifestPlusVersion": "1.0.0",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9",
+    "authors": [
+        {
+            "name": "Kandashi",
+            "url": "https://github.com/kandashi",
+            "discord": "Kandashi (He/Him)#6698"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "esmodules": [
+        "/scripts/raritycolors.js",
+        "/scripts/settings.js"
+    ],
+    "styles": [
+        "/styles/raritycolors.css"
+    ],
+    "url": "https://github.com/kandashi/rarity-colors",
+    "manifest": "https://github.com/kandashi/rarity-colors/releases/latest/download/module.json",
+    "download": "https://github.com/kandashi/rarity-colors/releases/download/0.1.05/module.zip"
+}
